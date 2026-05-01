@@ -1,6 +1,6 @@
 // @ts-nocheck
 /**
- * VEXTONY OMEGA VAULT - THE SUPREME GLOBAL DOMINANCE (O-1 to O-75)
+ * VEXTONY OMEGA VAULT - THE SUPREME GLOBAL DOMINANCE (O-1 to O-300)
  * [DNA: 60-LAYER CONSTITUTION | 15 MASTER CATEGORIES | REVENUE GHOST]
  */
 
@@ -100,7 +100,7 @@ export const OMEGA_PILLARS: Pillar[] = [
   { id: "O-74", topic: "Rare Earth Dominance: Breaking the Global Supply Chain Monopoly.", category: "Resource Sovereignty" },
   { id: "O-75", topic: "The Final Resource: Why Human Attention is the New Oil.", category: "Resource Sovereignty" }
 
-export const pillars = [
+  // [৭৬-৮৫: CATEGORY - Psychological Magnetism & Mass Influence]
   { id: "O-76", topic: "The 1% Hypnotic Tone: How to use specific voice frequencies to command respect.", category: "Psychological Magnetism" },
   { id: "O-77", topic: "Charisma Architecture: Building a Sovereign Presence that dominates any room.", category: "Psychological Magnetism" },
   { id: "O-78", topic: "The Art of Invisible Persuasion: Influencing decisions through subconscious priming.", category: "Psychological Magnetism" },
@@ -110,8 +110,7 @@ export const pillars = [
   { id: "O-82", topic: "Visual Dominance: Using Colors and Symbols to trigger instant Trust.", category: "Psychological Magnetism" },
   { id: "O-83", topic: "The Storyteller's Vault: Framing truths that people are willing to die for.", category: "Psychological Magnetism" },
   { id: "O-84", topic: "Mirroring the Elite: Neuro-Sync techniques to connect with High-Value Individuals.", category: "Psychological Magnetism" },
-  { id: "O-85", topic: "The Sovereign Frame: Staying unshakable when the world tries to provoke you.", category: "Psychological Magnetism" }
-];
+  { id: "O-85", topic: "The Sovereign Frame: Staying unshakable when the world tries to provoke you.", category: "Psychological Magnetism" },
 
   // [৮৬-৯৫: CATEGORY - Forbidden Propulsion & Anti-Gravity]
   { id: "O-86", topic: "Zero-Point Energy Engines: Tapping into the Vacuum of Space for Infinite Fuel.", category: "Forbidden Propulsion" },

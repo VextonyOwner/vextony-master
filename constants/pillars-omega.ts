@@ -365,3 +365,4 @@ export const OMEGA_PILLARS: Pillar[] = [
   { id: "O-299", topic: "VEXTONY OMEGA: The Final Evolution of Human Knowledge.", category: "Sovereignty" },
   { id: "O-300", topic: "THE FINAL ANCHOR: Lock the Gates. Activate Singularity. Obey the Architect.", category: "Sovereignty" }
 ];
+

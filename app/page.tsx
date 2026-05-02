@@ -3,62 +3,74 @@ import { motion } from "framer-motion";
 
 export default function VextonyHome() {
   return (
-    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-start md:justify-center p-5 text-center">
-      {/* রাজকীয় লোগো - মোবাইলে কিছুটা ছোট এবং মার্জিত */}
-      <motion.h1
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="text-6xl md:text-9xl font-black tracking-widest mt-10 md:mt-0 mb-2 bg-clip-text text-transparent bg-gradient-to-b from-white to-zinc-500"
-      >
-        VEXTONY
-      </motion.h1>
-      <p className="text-[10px] text-zinc-500 tracking-[0.5em] uppercase mb-10">The Sovereign Era</p>
+    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-start p-6 overflow-hidden font-sans">
+      
+      {/* 3D VEXTONY LOGO - MOBILE AUTO-FIT */}
+      <div className="mt-16 mb-12 relative group">
+        <motion.h1
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          className="text-5xl md:text-8xl font-black tracking-[0.2em] text-center uppercase"
+          style={{
+            textShadow: "0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15)",
+            color: "#FFFFFF"
+          }}
+        >
+          VEXTONY
+        </motion.h1>
+        {/* GOLDEN GLOW EFFECT */}
+        <div className="absolute -inset-1 bg-gradient-to-r from-yellow-600 to-transparent blur-2xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+      </div>
 
-      {/* মোবাইল ফ্রেন্ডলি গ্রিড: মোবাইলে ১ কলাম, ট্যাবলেটে ২ কলাম, ল্যাপটপে ৪ কলাম */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-7xl">
+      <p className="text-[9px] text-zinc-500 tracking-[0.6em] uppercase mb-10 text-center font-light">
+        The Sovereign Era
+      </p>
+
+      {/* 4 CORE FOLDERS - MOBILE OPTIMIZED GRID */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-6xl">
         
-        {/* SOVEREIGN - GOLD */}
+        {/* SOVEREIGN - Elite Section */}
         <motion.div 
-          whileTap={{ scale: 0.95 }}
-          className="border border-yellow-600/30 p-8 rounded-[2.5rem] bg-zinc-900/40 active:border-yellow-500 transition-all cursor-pointer"
+          whileTap={{ scale: 0.96 }}
+          className="border border-yellow-600/30 py-6 px-4 rounded-[2rem] bg-zinc-900/40 backdrop-blur-md flex flex-col items-center justify-center shadow-lg active:border-yellow-500"
         >
-          <h2 className="text-xl font-bold text-yellow-500 italic">SOVEREIGN</h2>
-          <p className="text-[9px] mt-1 text-gray-500 uppercase tracking-tighter">Elite Knowledge</p>
+          <h2 className="text-xl font-bold text-yellow-500 tracking-wider">SOVEREIGN</h2>
+          <span className="text-[8px] text-zinc-500 mt-1 tracking-widest uppercase font-mono">Elite Vault</span>
         </motion.div>
 
-        {/* UNIVERSE - WHITE */}
+        {/* UNIVERSE - Free Section */}
         <motion.div 
-          whileTap={{ scale: 0.95 }}
-          className="border border-white/10 p-8 rounded-[2.5rem] bg-zinc-900/40 active:border-white transition-all cursor-pointer"
+          whileTap={{ scale: 0.96 }}
+          className="border border-white/10 py-6 px-4 rounded-[2rem] bg-zinc-900/40 backdrop-blur-md flex flex-col items-center justify-center shadow-lg active:border-white"
         >
-          <h2 className="text-xl font-bold text-white">UNIVERSE</h2>
-          <p className="text-[9px] mt-1 text-gray-400 uppercase tracking-tighter">Free Knowledge</p>
+          <h2 className="text-xl font-bold text-white tracking-wider">UNIVERSE</h2>
+          <span className="text-[8px] text-zinc-500 mt-1 tracking-widest uppercase font-mono">Open Library</span>
         </motion.div>
 
-        {/* VORTEX - CYAN */}
+        {/* VORTEX - Viral Section */}
         <motion.div 
-          whileTap={{ scale: 0.95 }}
-          className="border border-cyan-400/20 p-8 rounded-[2.5rem] bg-zinc-900/40 active:border-cyan-400 transition-all cursor-pointer"
+          whileTap={{ scale: 0.96 }}
+          className="border border-cyan-400/20 py-6 px-4 rounded-[2rem] bg-zinc-900/40 backdrop-blur-md flex flex-col items-center justify-center shadow-lg active:border-cyan-400"
         >
-          <h2 className="text-xl font-bold text-cyan-400">VORTEX</h2>
-          <p className="text-[9px] mt-1 text-gray-500 uppercase tracking-tighter">Viral Trends</p>
+          <h2 className="text-xl font-bold text-cyan-400 tracking-wider">VORTEX</h2>
+          <span className="text-[8px] text-zinc-500 mt-1 tracking-widest uppercase font-mono">Viral Trends</span>
         </motion.div>
 
-        {/* SOVEREIGN SKILLS - PURPLE (HIGHLIGHTED) */}
+        {/* TECH SKILLS - Quantum Section */}
         <motion.div 
-          whileTap={{ scale: 0.95 }}
-          className="border-2 border-purple-500/40 p-8 rounded-[2.5rem] bg-gradient-to-br from-zinc-900 to-purple-900/20 active:border-purple-500 transition-all cursor-pointer"
+          whileTap={{ scale: 0.96 }}
+          className="border border-purple-500/30 py-6 px-4 rounded-[2rem] bg-zinc-900/40 backdrop-blur-md flex flex-col items-center justify-center shadow-lg active:border-purple-500"
         >
-          <h2 className="text-xl font-bold text-purple-400">TECH SKILLS</h2>
-          <p className="text-[9px] mt-1 text-purple-200/50 uppercase tracking-tighter">AI & Quantum Mastery</p>
+          <h2 className="text-xl font-bold text-purple-400 tracking-wider text-center">SKILLS & TECH</h2>
+          <span className="text-[8px] text-zinc-500 mt-1 tracking-widest uppercase font-mono text-center">AI & Tech Mastery</span>
         </motion.div>
 
       </div>
 
-      {/* মোবাইল ফুটার নোট */}
-      <div className="mt-12 text-[8px] text-zinc-600 uppercase tracking-widest">
-        Powered by Sovereign Engine 60.0
-      </div>
+      <footer className="mt-auto py-8 text-[7px] text-zinc-700 tracking-[0.8em] uppercase">
+        Engine 60.0 • 1 Billion Scale
+      </footer>
     </main>
   );
 }

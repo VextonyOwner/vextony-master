@@ -2,14 +2,18 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "VEXTONY",
-  description: "The Ultimate Knowledge Civilization",
+  title: "VEXTONY | Sovereign Era",
+  description: "The 1% Elite Knowledge Engine",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body className="bg-black">{children}</body>
+      <body className="bg-black antialiased">{children}</body>
     </html>
   );
 }

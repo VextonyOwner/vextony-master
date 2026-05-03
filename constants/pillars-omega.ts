@@ -187,7 +187,7 @@ export const OMEGA_PILLARS: Pillar[] = [
   { id: "O-147", topic: "Sovereign First-Aid: Performing surgery and healing without a hospital.", category: "Security" },
   { id: "O-148", topic: "The Ghost Signature: How to send untraceable messages via the Stars.", category: "Security" },
   { id: "O-149", topic: "VEXTONY Ark: The plan to preserve human knowledge for 1000 years.", category: "Sovereignty" },
-  { id: "O-150", topic: "The Final Seal: Locking your Sovereign Legacy for the Day of Judgment.", category: "Sovereignty" }
+  { id: "O-150", topic: "The Final Seal: Locking your Sovereign Legacy for the Day of Judgment.", category: "Sovereignty" },
 
   // [১৫১-১৬০: CATEGORY - Galactic Diplomacy & Star Laws]
   { id: "O-151", topic: "The First Contact Protocol: How a Sovereign Individual should interact with non-human intelligence.", category: "Galactic Diplomacy" },
@@ -276,7 +276,7 @@ export const OMEGA_PILLARS: Pillar[] = [
   { id: "O-222", topic: "Escape & Evasion: How to disappear from any city in 30 minutes.", category: "Sovereign Defense" },
   { id: "O-223", topic: "The Shadow Signature: Encrypting your location from all satellites.", category: "Sovereign Defense" },
   { id: "O-224", topic: "Sovereign Food Bunkers: Storing 25 years of food without decay.", category: "Sovereign Defense" },
-  { id: "O-225", topic: "The Final Stand: The mindset of an Unstoppable Sovereign Warrior.", category: "Sovereign Defense" }
+  { id: "O-225", topic: "The Final Stand: The mindset of an Unstoppable Sovereign Warrior.", category: "Sovereign Defense" },
 
   // [২২৬-২৩৫: CATEGORY - The Great Reset & Sovereign Survival]
   { id: "O-226", topic: "The Global Blackout: How to power your home when the Grid goes dark forever.", category: "Sovereign Survival" },

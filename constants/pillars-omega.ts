@@ -1,6 +1,6 @@
 // @ts-nocheck
 /**
- * VEXTONY OMEGA VAULT - THE SUPREME GLOBAL DOMINANCE (O-1 to O-300)
+ * VEXTONY OMEGA VAULT - THE SUPREME GLOBAL DOMINANCE (1-300)
  * [DNA: 60-LAYER CONSTITUTION | 15 MASTER CATEGORIES | REVENUE GHOST]
  */
 
@@ -98,7 +98,7 @@ export const OMEGA_PILLARS: Pillar[] = [
   { id: "O-72", topic: "The Future of Oil: Why Hydrocarbons are still the King of Energy.", category: "Resource Sovereignty" },
   { id: "O-73", topic: "Sovereign Real Estate: Investing in Space Habitats (2030-2050).", category: "Resource Sovereignty" },
   { id: "O-74", topic: "Rare Earth Dominance: Breaking the Global Supply Chain Monopoly.", category: "Resource Sovereignty" },
-  { id: "O-75", topic: "The Final Resource: Why Human Attention is the New Oil.", category: "Resource Sovereignty" }
+  { id: "O-75", topic: "The Final Resource: Why Human Attention is the New Oil.", category: "Resource Sovereignty" },
 
   // [৭৬-৮৫: CATEGORY - Psychological Magnetism & Mass Influence]
   { id: "O-76", topic: "The 1% Hypnotic Tone: How to use specific voice frequencies to command respect.", category: "Psychological Magnetism" },

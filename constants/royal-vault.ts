@@ -1,6 +1,6 @@
 // @ts-nocheck
 /**
- * VEXTONY SOVEREIGN PILLARS - THE ELITE VAULT (1-300)
+ * VEXTONY ROYAL VAULT - 1% ELITE TRUTH (PREMIUM KNOWLEDGE) (1-300)
  * [DNA: 30-CATEGORY CLUSTERING | SUPREME ARCHITECT v1.0]
  */
 
@@ -10,7 +10,7 @@ export interface Pillar {
   category: string;
 }
 
-export const SOVEREIGN_PILLARS: Pillar[] = [
+export const ROYAL_VAULT_PILLARS: Pillar[] = [
   // [১-১০: CATEGORY - Neural Sovereignty & AI Governance]
   { id: "P-1", topic: "Neural Prompt Sovereignty", category: "Neural Sovereignty & AI Governance" },
   { id: "P-2", topic: "Quantum Wealth Algorithms", category: "Neural Sovereignty & AI Governance" },

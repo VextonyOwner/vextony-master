@@ -1,6 +1,6 @@
 // @ts-nocheck
 /**
- * VEXTONY UNIVERSE PILLARS - THE GLOBAL KNOWLEDGE VAULT (1-300)
+ * VEXTONY CITIZEN HALL - FREE LIBRARY (GLOBAL KNOWLEDGE VAULT)
  * [DNA: 30-CATEGORY CLUSTERING | WIKIPEDIA KILLER v2.0]
  */
 
@@ -10,7 +10,7 @@ export interface Pillar {
   category: string;
 }
 
-export const UNIVERSE_PILLARS: Pillar[] = [
+export const CITIZEN_HALL_PILLARS: Pillar[] = [
   // [১-১০: CATEGORY - Core Tech & Automation]
   { id: "F-1", topic: "Python Automation Basics", category: "Core Tech & Automation" },
   { id: "F-2", topic: "Digital Marketing Evolution 2026", category: "Core Tech & Automation" },

@@ -24,7 +24,7 @@ export const OLYMPUS_PILLARS: Pillar[] = [
     { id: "OL-7", topic: "Moral Inversion Frameworks: Restructuring Regional Moral Standard Registries via Systemic Micro-Content Saturation", category: "Mass Psychology Manipulation" },
     { id: "OL-8", topic: "The Hydro-Psychological Loop: Correlating Macro Environmental Shifts with Collective Public Security Sentiments", category: "Mass Psychology Manipulation" },
     { id: "OL-9", topic: "The Cybernetic Desensitization Engine: Rewiring Long-Term Retentiveness Windows Using Rapid-Fire Video Interfaces", category: "Mass Psychology Manipulation" },
-    { id: "OL-10", topic: "The Ultimate Attention Monopoly Strategy: Capturing Cognitive Focus via Multi-Auth Inter-Connected Network Systems", category: "Mass Psychology Manipulation" }
+    { id: "OL-10", topic: "The Ultimate Attention Monopoly Strategy: Capturing Cognitive Focus via Multi-Auth Inter-Connected Network Systems", category: "Mass Psychology Manipulation" },
 
     // =========================================================================
     // CLUSTER 02: [11-20: CATEGORY Geopolitical Subversion]

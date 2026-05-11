@@ -1,6 +1,6 @@
 // @ts-nocheck
 /**
- * VEXTONY THE ARMORY   QUANTUM INTELLIGENCE AGENCY & SAAS BOT GRIDS (1-300)
+ * VEXTONY THE ARMORY   QUANTUM INTELLIGENCE AGENCY & SAAS BOT GRIDS (1-350)
  * [DNA: INDUSTRIAL MULTI-TENANT ARCHITECTURE | PEAK AI EMPIRE v60]
  * DIRECTIVE: NO CLOSED BRACKETS | EXACT MATCH TO INTERFACE ID: "THE ARMORY CORE"
  */
@@ -2834,5 +2834,475 @@ export const ARMORY_INVENTORY: ArmoryProduct[] = [
         creditCost: 5000, 
         aiEngine: "Emergency_Kill_Protocol", 
         category: "QUANTUM ENTANGLEMENT" 
+    },
+
+    // =========================================================================
+    // CLUSTER 31: [301-310: CATEGORY DEEP OPS & INTEL]
+    // =========================================================================
+    { 
+        id: "ARM-301", 
+        name: "Sub-Bedrock Acoustic Wave Interceptor", 
+        task: "Decodes seismic and acoustic structural telemetry from air-gapped subterranean bunkers using low-frequency geophone arrays", 
+        price: "$3500 / Project Use", 
+        creditCost: 450, 
+        aiEngine: "NASA-Telemetry-Model", 
+        category: "DEEP OPS & INTEL" 
+    },
+    { 
+        id: "ARM-302", 
+        name: "Dark-Fiber Passive Cross-Talk Scraper", 
+        task: "Extracts encrypted corporate server data packets directly from unlit fiber lines using non-intrusive induction sensors", 
+        price: "$2000 / Month", 
+        creditCost: 250, 
+        aiEngine: "Sovereign_Search_Brain", 
+        category: "DEEP OPS & INTEL" 
+    },
+    { 
+        id: "ARM-303", 
+        name: "Satellite Optical Laser Reflection Decoder", 
+        task: "Reconstructs computer monitor viewports by scanning dynamic micro-reflections off glass windows via low-orbit satellite cameras", 
+        price: "$5000 / Run", 
+        creditCost: 600, 
+        aiEngine: "Vortex-Live-Render", 
+        category: "DEEP OPS & INTEL" 
+    },
+    { 
+        id: "ARM-304", 
+        name: "RF Near-Field EM Spillage Profiler", 
+        task: "Captures and visualizes processing operations of shielded processor boards by mapping subtle electromagnetic leakages", 
+        price: "$1800 / Device Sync", 
+        creditCost: 200, 
+        aiEngine: "SDR-Spectral-AI", 
+        category: "DEEP OPS & INTEL" 
+    },
+    { 
+        id: "ARM-305", 
+        name: "Sub-Surface Ionosphere Signal Interceptor", 
+        task: "Decrypts tactical communication streams by tapping into VLF (Very Low Frequency) atmospheric bounce waves", 
+        price: "$1500 / Month", 
+        creditCost: 180, 
+        aiEngine: "SDR-Signal-AI", 
+        category: "DEEP OPS & INTEL" 
+    },
+    { 
+        id: "ARM-306", 
+        name: "Keystroke Thermal Decryption Engine", 
+        task: "Identifies system root passwords by analyzing residual heat prints left on physical keyboards via infrared matrix scans", 
+        price: "$1200 / Execution", 
+        creditCost: 150, 
+        aiEngine: "Search_Refiner_AI", 
+        category: "DEEP OPS & INTEL" 
+    },
+    { 
+        id: "ARM-307", 
+        name: "Localized Smart-Dust Radio Array Mapper", 
+        task: "Tracks movement vectors of physical assets inside high-security enclaves using microscopic piezo-electric dust telemetries", 
+        price: "$4500 / Target", 
+        creditCost: 500, 
+        aiEngine: "GraphNeural-Network-Core", 
+        category: "DEEP OPS & INTEL" 
+    },
+    { 
+        id: "ARM-308", 
+        name: "Sub-Aquatic Trench Hydrophone Harvester", 
+        task: "Ingests acoustic communication signals from deep-sea military transit cables crossing international neutral waters", 
+        price: "$6000 / Month", 
+        creditCost: 700, 
+        aiEngine: "NASA-Telemetry-Model", 
+        category: "DEEP OPS & INTEL" 
+    },
+    { 
+        id: "ARM-309", 
+        name: "Quantum-Entangled Mind Sensor Ingress", 
+        task: "Detects structural blueprint modifications in elite air-gapped data vaults using multi-tenant predictive neural graphs", 
+        price: "$8000 / Target Sync", 
+        creditCost: 900, 
+        aiEngine: "SovereignArchitect-Core", 
+        category: "DEEP OPS & INTEL" 
+    },
+    { 
+        id: "ARM-310", 
+        name: "The Ultimate Deep Intelligence Matrix", 
+        task: "Comprehensive non-public OSINT platform compiling global classified and uncached registries under one sovereign dashboard", 
+        price: "$10000 / Month", 
+        creditCost: 1200, 
+        aiEngine: "SovereignArchitect-Core", 
+        category: "DEEP OPS & INTEL" 
+    },
+
+    // =========================================================================
+    // CLUSTER 32: [311-320: CATEGORY EMERGENCY KILL]
+    // =========================================================================
+    { 
+        id: "ARM-311", 
+        name: "RAM Cache Zero-Fill Automation Shield", 
+        task: "Overwrites entire memory segments with randomized bitmask patterns instantly during live hardware breach alerts", 
+        price: "$600 / Integration", 
+        creditCost: 60, 
+        aiEngine: "Emergency_Kill_Protocol", 
+        category: "EMERGENCY KILL" 
+    },
+    { 
+        id: "ARM-312", 
+        name: "Multi-Tenant Schema Shard Shredder", 
+        task: "Executes programmatic cryptographic cell destruction across isolated database nodes upon brute-force detections", 
+        price: "$1200 / Emergency Use", 
+        creditCost: 150, 
+        aiEngine: "MultiTenantDB-Router", 
+        category: "EMERGENCY KILL" 
+    },
+    { 
+        id: "ARM-313", 
+        name: "Dynamic CDN Subdomain Vanisher Node", 
+        task: "Purges and un-maps 100 language application routes from global edge cache mirrors within 3.5 seconds flat", 
+        price: "$800 / Activation", 
+        creditCost: 90, 
+        aiEngine: "Localization_Matrix_v1", 
+        category: "EMERGENCY KILL" 
+    },
+    { 
+        id: "ARM-314", 
+        name: "Ring-0 Hardware Bus Shorting Daemon", 
+        task: "Bricks the underlying system motherboard architecture by inducing localized micro-voltage loop overloads safely", 
+        price: "$2000 / Single Lock", 
+        creditCost: 250, 
+        aiEngine: "Omega-Core-Daemon", 
+        category: "EMERGENCY KILL" 
+    },
+    { 
+        id: "ARM-315", 
+        name: "Edge API Gateway Session Void Matrix", 
+        task: "Terminates all token verifications inside Vercel serverless layer runtimes instantly to stop payload leaks", 
+        price: "$500 / Activation", 
+        creditCost: 55, 
+        aiEngine: "Neural_Firewall_V4", 
+        category: "EMERGENCY KILL" 
+    },
+    { 
+        id: "ARM-316", 
+        name: "Live Merchant Processing Cut-Off Switch", 
+        task: "Disconnects active payment gateway channels to secure central capital reserves from state judicial freezes", 
+        price: "$400 / Setup Fee", 
+        creditCost: 40, 
+        aiEngine: "Treasury_Gate_Matrix", 
+        category: "EMERGENCY KILL" 
+    },
+    { 
+        id: "ARM-317", 
+        name: "Viral Content Syndication Freeze Protocol", 
+        task: "Halts all running autonomous bot traffic generators instantly during high-risk network maintenance shifts", 
+        price: "$300 / Month", 
+        creditCost: 30, 
+        aiEngine: "Spam_Immunity_v4", 
+        category: "EMERGENCY KILL" 
+    },
+    { 
+        id: "ARM-318", 
+        name: "Cross-Chain Escrow Liquidation Inversion", 
+        task: "Triggers immediate emergency atomic swaps to pull decentralized pool liquidity straight into air-gapped hardware wallets", 
+        price: "$950 / Build Run", 
+        creditCost: 110, 
+        aiEngine: "Graph-Neural-Wealth", 
+        category: "EMERGENCY KILL" 
+    },
+    { 
+        id: "ARM-319", 
+        name: "SaaS Client Node Network Isolator", 
+        task: "Slashes routing connections between compromised enterprise data shards to prevent multi-tenant cluster contagion", 
+        price: "$750 / Month", 
+        creditCost: 80, 
+        aiEngine: "MultiTenantDB-Router", 
+        category: "EMERGENCY KILL" 
+    },
+    { 
+        id: "ARM-320", 
+        name: "The Ultimate Sovereign Purge System", 
+        task: "Definitive system core self-destruct mechanism deleting all code and database indexes beyond forensic recovery bounds", 
+        price: "$7000 / Safe Integration", 
+        creditCost: 850, 
+        aiEngine: "Emergency_Kill_Protocol", 
+        category: "EMERGENCY KILL" 
+    },
+
+    // =========================================================================
+    // CLUSTER 33: [321-330: CATEGORY QUANTUM SHIELD]
+    // =========================================================================
+    { 
+        id: "ARM-321", 
+        name: "Multi-Dimensional Lattice Cryptography Vault", 
+        task: "Protects relational data variables against quantum computing matrix factorization vectors using high-coherent geometry shields", 
+        price: "$1800 / Month", 
+        creditCost: 200, 
+        aiEngine: "SovereignArchitect-Core", 
+        category: "QUANTUM SHIELD" 
+    },
+    { 
+        id: "ARM-322", 
+        name: "Zero-Knowledge Blind State Edge Verifier", 
+        task: "Authenticates incoming multi-tenant access tokens without decrypting or exposing plaintext client record databases", 
+        price: "$1400 / Month", 
+        creditCost: 150, 
+        aiEngine: "Neural_Firewall_V4", 
+        category: "QUANTUM SHIELD" 
+    },
+    { 
+        id: "ARM-323", 
+        name: "Kyber-1024 Micro-Frontend Session Locker", 
+        task: "Secures user dashboard API requests using post-quantum asymmetric cryptographic key handshakes at sub-1ms speed", 
+        price: "$900 / Month", 
+        creditCost: 95, 
+        aiEngine: "Async_Neural_Hub", 
+        category: "QUANTUM SHIELD" 
+    },
+    { 
+        id: "ARM-324", 
+        name: "Toroidal Atmospheric Noise Key Generator", 
+        task: "Compiles completely unpredictable cryptographic salt structures using raw electrostatic atmospheric static input matrices", 
+        price: "$500 / Month", 
+        creditCost: 50, 
+        aiEngine: "SDR-Spectral-AI", 
+        category: "QUANTUM SHIELD" 
+    },
+    { 
+        id: "ARM-325", 
+        name: "Sharded Private Key Multi-Sig Matrix", 
+        task: "Splits system root administration passwords into 9 heavily encrypted segments hidden across distinct cloud vectors", 
+        price: "$1200 / Setup Execution", 
+        creditCost: 130, 
+        aiEngine: "SovereignIdentity-Shield", 
+        category: "QUANTUM SHIELD" 
+    },
+    { 
+        id: "ARM-326", 
+        name: "Homomorphic SaaS Data Processor Inversion", 
+        task: "Allows deep computing calculations to be executed on encrypted tables without plain-text data leaking vulnerabilities", 
+        price: "$1300 / Month", 
+        creditCost: 140, 
+        aiEngine: "MultiTenantDB-Router", 
+        category: "QUANTUM SHIELD" 
+    },
+    { 
+        id: "ARM-327", 
+        name: "Anti-Phase Audio Infrasound Acoustic Void", 
+        task: "Protects core personnel workspaces from external low-frequency mind control arrays via localized acoustic wave cancellation", 
+        price: "$1600 / Month", 
+        creditCost: 180, 
+        aiEngine: "Groq-Llama-3-SpecOps", 
+        category: "QUANTUM SHIELD" 
+    },
+    { 
+        id: "ARM-328", 
+        name: "Active RF Spectral Phase Deflector", 
+        task: "Generates private electromagnetic insulation fields around physical server hardware nodes to neutralize external scans", 
+        price: "$2200 / Month", 
+        creditCost: 260, 
+        aiEngine: "SDR-Signal-AI", 
+        category: "QUANTUM SHIELD" 
+    },
+    { 
+        id: "ARM-329", 
+        name: "Ionospheric Burst Core Shield Hardener", 
+        task: "Protects off-grid communications networks from high-altitude EMP ionization flares and space weather fluctuations", 
+        price: "$1500 / Hardware Build", 
+        creditCost: 160, 
+        aiEngine: "AWS-Compute-Sentinel", 
+        category: "QUANTUM SHIELD" 
+    },
+    { 
+        id: "ARM-330", 
+        name: "The Supreme Post-Quantum Guard", 
+        task: "Ultimate perimeter protection engine blocking advanced AI multi-vector penetration loops and brute-force structural attacks", 
+        price: "$4000 / Month", 
+        creditCost: 500, 
+        aiEngine: "SovereignArchitect-Core", 
+        category: "QUANTUM SHIELD" 
+    },
+
+    // =========================================================================
+    // CLUSTER 34: [331-340: CATEGORY GHOST MARKETING]
+    // =========================================================================
+    { 
+        id: "ARM-331", 
+        name: "Google Index Ghost Inversion Arbitrageur", 
+        task: "Siphons massive global organic traffic pipelines straight into landing checkouts using automated semantic keyword exploits", 
+        price: "$500 / Month", 
+        creditCost: 50, 
+        aiEngine: "Spam_Immunity_v4", 
+        category: "GHOST MARKETING" 
+    },
+    { 
+        id: "ARM-332", 
+        name: "Media Recommendation Feed Exploit Daemon", 
+        task: "Forces short-form video and content virality parameters across networks via coordinated autonomous account interaction trees", 
+        price: "$400 / Month", 
+        creditCost: 40, 
+        aiEngine: "Gemini-Flash-Funnel", 
+        category: "GHOST MARKETING" 
+    },
+    { 
+        id: "ARM-333", 
+        name: "Database-to-Video Auto-Render Engine V3", 
+        task: "Converts raw database knowledge charts into hyper-retention audio-visual micro-contents without manual editing steps", 
+        price: "$199 / Month", 
+        creditCost: 20, 
+        aiEngine: "Vortex-Live-Render", 
+        category: "GHOST MARKETING" 
+    },
+    { 
+        id: "ARM-334", 
+        name: "Multi-Server SMTP Spam Shield Bypass Router", 
+        task: "Delivers outreach email workflows by morphing vocabulary syntaxes and executing rapid microsecond outbound server jumps", 
+        price: "$300 / Month", 
+        creditCost: 30, 
+        aiEngine: "Linguistic-Shifting-Core", 
+        category: "GHOST MARKETING" 
+    },
+    { 
+        id: "ARM-335", 
+        name: "Biometric Interface Purchase Target Profiler", 
+        task: "Clusters incoming audience data based on active interaction loop rhythms to optimize checkout conversion velocities", 
+        price: "$350 / Month", 
+        creditCost: 35, 
+        aiEngine: "Groq-Predictive-Pricing", 
+        category: "GHOST MARKETING" 
+    },
+    { 
+        id: "ARM-336", 
+        name: "100-Language Landing Page Automorph Sync", 
+        task: "Adapts digital conversion assets to regional consumer purchasing psychologies across 100 country subdomains instantly", 
+        price: "$1500 / Month", 
+        creditCost: 140, 
+        aiEngine: "Localization_Matrix_v1", 
+        category: "GHOST MARKETING" 
+    },
+    { 
+        id: "ARM-337", 
+        name: "Contextual Comment Viral Traffic Driver", 
+        task: "Drives initial platform exposure loops by deploying autonomous human-like text profiles discussing viral social topics", 
+        price: "$650 / Month", 
+        creditCost: 70, 
+        aiEngine: "Cognitive-Warfare-Shield", 
+        category: "GHOST MARKETING" 
+    },
+    { 
+        id: "ARM-338", 
+        name: "Uncached Edge Cache Intent Data Miner", 
+        task: "Harvests commercial buying trends directly from distributed server cache logs without tracking cookie dependencies", 
+        price: "$550 / Month", 
+        creditCost: 55, 
+        aiEngine: "Search_Refiner_AI", 
+        category: "GHOST MARKETING" 
+    },
+    { 
+        id: "ARM-339", 
+        name: "Open-Source Footprint Sales Lead Transmuter", 
+        task: "Aggregates broken public metadata trails to compile highly responsive customer sales and acquisition channels", 
+        price: "$249 / Month", 
+        creditCost: 25, 
+        aiEngine: "Sovereign_Search_Brain", 
+        category: "GHOST MARKETING" 
+    },
+    { 
+        id: "ARM-340", 
+        name: "The Ultimate Conversion Traffic Overlord", 
+        task: "Synthesizes data crawling and content generation pipelines to launch millions of active traffic hooks across 100 sub-domains", 
+        price: "$4500 / Month", 
+        creditCost: 550, 
+        aiEngine: "SovereignArchitect-Core", 
+        category: "GHOST MARKETING" 
+    },
+
+    // =========================================================================
+    // CLUSTER 35: [341-350: CATEGORY ASTRAL INTERFACE (Mind-Machine SaaS Networks)]
+    // =========================================================================
+    { 
+        id: "ARM-341", 
+        name: "Orch-OR Synaptic Resonance Modulator", 
+        task: "Synchronizes user neural interface refresh rates with background quantum vacuum states via bio-photonic phase tuning", 
+        price: "$1500 / Month", 
+        creditCost: 180, 
+        aiEngine: "SovereignArchitect-Core", 
+        category: "ASTRAL INTERFACE" 
+    },
+    { 
+        id: "ARM-342", 
+        name: "Hypnagogic State Script Ingestion Mod", 
+        task: "Injects optimized e-commerce strategy logic directly into core memory blocks during high-alpha sleep border zones", 
+        price: "$850 / Configuration", 
+        creditCost: 90, 
+        aiEngine: "Search_Refiner_AI", 
+        category: "ASTRAL INTERFACE" 
+    },
+    { 
+        id: "ARM-343", 
+        name: "Binaural EEG Phase Lock Coordinator", 
+        task: "Forces left-right hemispheric brainwave symmetry to accelerate technical data ingestion performance speeds", 
+        price: "$300 / Month", 
+        creditCost: 35, 
+        aiEngine: "Async_Neural_Hub", 
+        category: "ASTRAL INTERFACE" 
+    },
+    { 
+        id: "ARM-344", 
+        name: "Subconscious Ad-Tech Injunction Purger", 
+        task: "Scrapes and clears latent cognitive tracking conditioning files from neural memory layers automatically", 
+        price: "$500 / Month", 
+        creditCost: 55, 
+        aiEngine: "Neural_Firewall_V4", 
+        category: "ASTRAL INTERFACE" 
+    },
+    { 
+        id: "ARM-345", 
+        name: "Piezoelectric Calcite Crystal Resonance Inverter", 
+        task: "Tunes epithalamus region sensors to intercept non-public wireless wave telemetry coordinates safely", 
+        price: "$2000 / Use", 
+        creditCost: 250, 
+        aiEngine: "SDR-Spectral-AI", 
+        category: "ASTRAL INTERFACE" 
+    },
+    { 
+        id: "ARM-346", 
+        name: "Coordinate Target Address Router (CRV)", 
+        task: "Generates secure target spatial vector strings to prevent analytical overlay errors inside remote data viewing slots", 
+        price: "$1200 / Run", 
+        creditCost: 130, 
+        aiEngine: "Sovereign_Search_Brain", 
+        category: "ASTRAL INTERFACE" 
+    },
+    { 
+        id: "ARM-347", 
+        name: "Biometric Water Matrix Static Purger", 
+        task: "Clears traumatic stress identifiers from body cellular layers using declassified harmonic wave frequencies", 
+        price: "$600 / Hardware Sync", 
+        creditCost: 70, 
+        aiEngine: "SDR-Signal-AI", 
+        category: "ASTRAL INTERFACE" 
+    },
+    { 
+        id: "ARM-348", 
+        name: "Sri Yantra 3D Geometry Canvas Weaver", 
+        task: "Deploys aperiodic quasifractal dashboard layouts optimized to stop user attention span latency bottlenecks", 
+        price: "$400 / Month", 
+        creditCost: 40, 
+        aiEngine: "Vortex-Live-Render", 
+        category: "ASTRAL INTERFACE" 
+    },
+    { 
+        id: "ARM-349", 
+        name: "Chronos Sleep Expansion System Engine", 
+        task: "Modulates personal time perception parameters to simulate years of algorithmic execution testing inside single rest cycles", 
+        price: "$3000 / Setup Loop", 
+        creditCost: 400, 
+        aiEngine: "SovereignIntelligence", 
+        category: "ASTRAL INTERFACE" 
+    },
+    { 
+        id: "ARM-350", 
+        name: "The Ultimate Mind-Machine Sovereignty Protocol", 
+        task: "Synthesizes bio-feedback and network code architectures to achieve complete cognitive autonomy from the macro matrix", 
+        price: "$5000 / Month", 
+        creditCost: 600, 
+        aiEngine: "SovereignArchitect-Core", 
+        category: "ASTRAL INTERFACE" 
     }
 ];

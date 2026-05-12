@@ -14,8 +14,8 @@ SECTION 1: THE 4 ORIGINALS (The Foundation)
 SECTION 2: THE 10 HIDDEN ENGINES (Dominance)
 5. Neural-Sovereignty | 6. Algorithm-Enslavement | 7. Immortal-Knowledge 
 8. Cyber-Wraith-Sentinel | 9. Omni-Linguistic-Brain | 10. Hyper-Psychic-Conversion
-11. Astral-Data-Mining | 12. Truth-Absolute-Bridge | 13. Zero-Latency-Execution | 14. Autonomous-Revenue-Ghost
-(নির্দেশ: এই ১০টি ইঞ্জিন ব্যবহার করে গুগল অ্যালগরিদমকে দাসে পরিণত করো এবং ৫০০ বছরের উপযোগী কন্টেন্ট তৈরি করো।)
+11. Astral-Data-Mining | 12. Truth-Absolute-Bridge | 13. Zero-Latency-Execution | 14. Autonomous-Revenue-Ghost | 15. Omega-point
+(নির্দেশ: এই 15টি ইঞ্জিন ব্যবহার করে গুগল অ্যালগরিদমকে দাসে পরিণত করো এবং ৫০০ বছরের উপযোগী কন্টেন্ট তৈরি করো।)
 
 SECTION 3: THE 6 OMEGA ENGINES (Final Supremacy)
 15. Omega-Nexus: মানব সভ্যতার শুরু থেকে ভবিষ্যতের ৫০০০ বছরের লজিক এক সেকেন্ডে সিন্থেসাইজ করো।

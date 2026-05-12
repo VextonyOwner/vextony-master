@@ -504,7 +504,7 @@ export const VORTEX_INVENTORY: VortexProduct[] = [
     { id: "VX-349", title: "Hyperbolic Metamaterial Cavity Resonator Wave Oscillators: Amplifying Coherent Bio-Photon Signals to Speed Autonomous Tissue Regeneration", videoUrl: "vextony.com", duration: "03:10:00", category: "Quantum Metamaterial Analytics Grids" },
     { id: "VX-350", title: "The Ultimate Photonic Quantum Interconnect Gateway Ingestion Core: Hardcoding Molecular Storage Registries across Sharded Relational Ledgers", videoUrl: "vextony.com", duration: "04:40:00", category: "Quantum Metamaterial Analytics Grids" },
 
-      // =========================================================================
+        // =========================================================================
     // CLUSTER 36: [351-360: CATEGORY Advanced Somatosensory Neuro-Sync]
     // =========================================================================
     { id: "VX-351", title: "Direct Cortical Micro-Stimulator Hardware Matrix Configurations: Injecting Strategic Technical Knowledge Profiles into Brain Palaces", videoUrl: "vextony.com", duration: "03:22:15", category: "Advanced Somatosensory Neuro-Sync" },
@@ -564,16 +564,15 @@ export const VORTEX_INVENTORY: VortexProduct[] = [
     // CLUSTER 40: [391-400: CATEGORY Glass-Morphic Interface Compilers]
     // =========================================================================
     { id: "VX-391", title: "Next.js Edge-Compiled Glass-Morphic Core Framework Units: Manufacturing Ultra-Dense Premium Canvases for Sub-5ms Client Frame Loads", videoUrl: "vextony.com", duration: "03:12:45", category: "Glass-Morphic Interface Compilers" },
-    { id: "AG-392", agentName: "Glass-Morphic Dynamic Payment Activity Grid Logger", task: "Renders real-time neon geometric visual logs of successful user capital checkout drops onto the screen", apiEndpoint: "/api/agents/v1/dashboard/activity-grid", category: "Sovereign Dashboard Analytics Core" },
-    { id: "AG-393", agentName: "Predictive API Token Cost Calculator Router", task: "Forecasts dynamic multi-provider platform infrastructure operational expenses prior to activating swarm routines", apiEndpoint: "/api/agents/v1/dashboard/cost-calculator", category: "Sovereign Dashboard Analytics Core" },
-    { id: "AG-394", agentName: "Live Ingress Traffic Spatial Synchronization Console", task: "Maps real-time geographic location coordinates of active platform user sessions across client viewports smoothly", apiEndpoint: "/api/agents/v1/dashboard/traffic-sync", category: "Sovereign Dashboard Analytics Core" },
-    { id: "AG-395", agentName: "Offshore Merchant Settlement Capital Pipeline Tracker", task: "Monitors outbound membership cashflow routes passing through secure tax-exempt island banking enclaves", apiEndpoint: "/api/agents/v1/dashboard/merchant-tracker", category: "Sovereign Dashboard Analytics Core" },
-    { id: "AG-396", agentName: "Multi-Tier Vault Authorization Status Indexer Ring", task: "Renders floating 3D neon status indicators based on active user licensing levels and structural time-locks", apiEndpoint: "/api/agents/v1/dashboard/auth-indexer", category: "Sovereign Dashboard Analytics Core" },
-    { id: "AG-397", agentName: "Autonomous Revenue Profit Margin Optimizer Daemon", task: "Tracks cloud compute processing costs against inbound customer payments to output true net margin metrics", apiEndpoint: "/api/agents/v1/dashboard/profit-optimizer", category: "Sovereign Dashboard Analytics Core" },
-    { id: "AG-398", agentName: "Cloud Infrastructure CPU Server Load Monitor Matrix", task: "Visualizes hardware utilization metrics across sharded database clusters to prevent system latency spikes", apiEndpoint: "/api/agents/v1/dashboard/load-monitor", category: "Sovereign Dashboard Analytics Core" },
-    { id: "AG-399", agentName: "Anonymous Web3 Cryptographic Wallet Connector Node", task: "Links decentralized digital currencies with local user dashboard profile verification records securely", apiEndpoint: "/api/agents/v1/dashboard/wallet-connector", category: "Sovereign Dashboard Analytics Core" },
-    { id: "AG-400", agentName: "The Supreme Sovereign Fleet Control Panel Zenith Matrix", task: "The absolute analytical control interface engine visualizing the entire multi-tenant trillion-scale platform empire", apiEndpoint: "/api/agents/v1/dashboard/fleet-zenith", category: "Sovereign Dashboard Analytics Core" }
+    { id: "VX-392", title: "Asynchronous Multi-API Key Failover Load Balancing Automators: Managing Outbound Prompts without Platform Timeout Errors", videoUrl: "vextony.com", duration: "02:40:18", category: "Glass-Morphic Interface Compilers" },
+    { id: "VX-393", title: "Vercel Serverless Function Layer Edge Security Sentinels: Intercepting Malicious Layer-7 Packet Configurations prior to Ingest", videoUrl: "vextony.com", duration: "03:05:50", category: "Glass-Morphic Interface Compilers" },
+    { id: "VX-394", title: "The Dynamic Category Sub-Button Automorph Token Array: Spinning Up 3D Neon Selection Rings straight from System Rules", videoUrl: "vextony.com", duration: "02:22:11", category: "Glass-Morphic Interface Compilers" },
+    { id: "VX-395", title: "The Horizontal Relational Database Shard Routing Gateway Core: Distributing Subdomain Traffic paths across Shards for True O(1) Fetch", videoUrl: "vextony.com", duration: "03:48:30", category: "Glass-Morphic Interface Compilers" },
+    { id: "VX-396", title: "Multi-Auth Identity checkout Provider Connectors Interface: Integrating Secure Login Loops Decoupled from Corporate Ad-Tech Scripts", videoUrl: "vextony.com", duration: "02:15:44", category: "Glass-Morphic Interface Compilers" },
+    { id: "VX-397", title: "Real-Time User Credit Balance Token Registry Monitors: Tracking Dynamic Unit Consumption Parameters across App Shards Instantly", videoUrl: "vextony.com", duration: "01:58:20", category: "Glass-Morphic Interface Compilers" },
+    { id: "VX-398", title: "The Neon-Glow Historical Activity Logging Feed Matrix: Rendering 3D Geometry Records of Corporate Capital Drops cleanly", videoUrl: "vextony.com", duration: "02:50:12", category: "Glass-Morphic Interface Compilers" },
+    { id: "VX-399", title: "Predictive Ingestion Runtime Compute Resource Cost Estimators: Calculating Cloud Allocations prior to AI Agent Activations", videoUrl: "vextony.com", duration: "03:10:00", category: "Glass-Morphic Interface Compilers" },
+    { id: "VX-400", title: "The Supreme Sovereign Fleet Control Panel Zenit Architecture: Ultimate Analytical Workspace Visualizing the Entire Cloud Matrix Center", videoUrl: "vextony.com", duration: "04:40:00", category: "Glass-Morphic Interface Compilers" }
 ];
 
-];
-
+     

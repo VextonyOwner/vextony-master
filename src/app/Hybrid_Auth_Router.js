@@ -4,7 +4,7 @@
  * [STATUS: ARMED & PRODUCTION-READY] | [PRIVILEGE: AUTH NETWORK LAYER]
  */
 
-import { CryptoShield } from "./JWT_Shield";
+import { CryptoShield } from "./JWT_Shield.js";
 
 export class HybridAuthRouter {
   constructor() {
@@ -13,24 +13,40 @@ export class HybridAuthRouter {
   }
 
   /**
-   * Evaluates inbound access parameters and routes request vectors safely
-   * @param {Object} reqContext - Incoming request headers and metadata
-   * @returns {Object} Target redirection routing mapping containing access authorization status
+   * Evaluates inbound access parameters and routes request vectors safely via ESM runtime resolution
    */
-  evaluateRoute(reqContext) {
-    if (!reqContext || !reqContext.token) {
-      return { orderedRoute: this.fallbackRoute, authorized: false };
+  routeAuthenticationInbound(reqContext) {
+    if (!reqContext || !reqContext.headers) {
+      return { destination: this.fallbackRoute, status: 401, authorized: false };
     }
-    
-    try {
-      const isTokenValid = CryptoShield.verifyToken(reqContext.token);
-      if (isTokenValid) {
-        return { orderedRoute: this.secureDashboardRoute, authorized: true };
-      }
-    } catch (error) {
-      // Graceful error isolation
+
+    const authHeader = reqContext.headers["authorization"] || reqContext.headers["Authorization"];
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
+      return { destination: this.fallbackRoute, status: 401, authorized: false };
     }
+
+    const clearToken = authHeader.substring(7);
+    const tokenVerification = CryptoShield.verifySessionToken(clearToken);
+
+    if (!tokenVerification.isValid) {
+      return { 
+        destination: this.fallbackRoute, 
+        status: 403, 
+        authorized: false, 
+        errCode: tokenVerification.reason 
+      };
+    }
+
+    const userRole = tokenVerification.identityClaim.securityTier || "FREE";
     
-    return { orderedRoute: this.fallbackRoute, authorized: false };
+    return {
+      destination: this.secureDashboardRoute,
+      status: 200,
+      authorized: true,
+      userScope: userRole,
+      tenantLocation: tokenVerification.identityClaim.verificationChannel || "GLOBAL"
+    };
   }
 }
+
+export const GlobalAuthRouter = new HybridAuthRouter();

@@ -4,10 +4,9 @@
  * [STATUS: ARMED & PRODUCTION-READY] | [PRIVILEGE: AUTH NETWORK LAYER]
  */
 
-// Strict relative path mapping inside src/app directory context
-const { CryptoShield } = require("./JWT_Shield.js");
+import { CryptoShield } from "./JWT_Shield";
 
-class HybridAuthRouter {
+export class HybridAuthRouter {
   constructor() {
     this.fallbackRoute = "/";
     this.secureDashboardRoute = "/vault";

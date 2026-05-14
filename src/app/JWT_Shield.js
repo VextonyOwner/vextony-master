@@ -4,19 +4,16 @@
  * [STATUS: ARMED & ACTIVE] | [PRIVILEGE: SECURE SESSION TOKEN GUARD]
  */
 
-const CryptoJS = require("crypto-js");
+import CryptoJS from "crypto-js";
 
-class JWTShield {
+export class JWTShield {
   constructor() {
-    // Uses the central environment secret established in Node 002
     this.secretKey = process.env.VAULT_SECRET_KEY || "fallback_vextony_secure_token_key_991122";
-    this.tokenExpiryWindow = 3600000; // 1-Hour strict session life cycle
+    this.tokenExpiryWindow = 3600000; 
   }
 
   /**
-   * Generates an unforgeable, HMAC-SHA256 signed session payload array
-   * @param {Object} sessionClaims - User structural permissions and identities
-   * @returns {string} Fully signed token string
+   * Generates an unforgeable, HMAC-SHA256 signed session payload array using standard ESM exports
    */
   generateSessionToken(sessionClaims) {
     const header = { alg: "HS256", typ: "JWT", armed: true };
@@ -37,8 +34,6 @@ class JWTShield {
 
   /**
    * Dissects and cryptographically validates incoming bearer session signatures
-   * @param {string} incomingToken - Token string extracted from the request headers
-   * @returns {Object} Decrypted identity mapping or validation failure log
    */
   verifySessionToken(incomingToken) {
     if (!incomingToken || typeof incomingToken !== "string") {
@@ -60,11 +55,9 @@ class JWTShield {
 
     try {
       const decodedPayload = JSON.parse(Buffer.from(payload, "base64url").toString("utf8"));
-      
       if (Date.now() > decodedPayload.exp) {
         return { isValid: false, reason: "SESSION_EXPIRED" };
       }
-
       return { isValid: true, identityClaim: decodedPayload };
     } catch (error) {
       return { isValid: false, reason: "CORRUPTED_PAYLOAD_PARSE" };
@@ -72,5 +65,4 @@ class JWTShield {
   }
 }
 
-const CryptoShield = new JWTShield();
-module.exports = { JWTShield, CryptoShield };
+export const CryptoShield = new JWTShield();

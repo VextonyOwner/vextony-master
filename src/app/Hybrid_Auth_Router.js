@@ -17,40 +17,20 @@ export class HybridAuthRouter {
    * @param {Object} reqContext - Incoming request headers and metadata
    * @returns {Object} Target redirection routing mapping containing access authorization status
    */
-  routeAuthenticationInbound(reqContext) {
-    if (!reqContext || !reqContext.headers) {
-      return { destination: this.fallbackRoute, status: 401, authorized: false };
+  evaluateRoute(reqContext) {
+    if (!reqContext || !reqContext.token) {
+      return { orderedRoute: this.fallbackRoute, authorized: false };
     }
-
-    const authHeader = reqContext.headers["authorization"] || reqContext.headers["Authorization"];
-    if (!authHeader || !authHeader.startsWith("Bearer ")) {
-      return { destination: this.fallbackRoute, status: 401, authorized: false };
-    }
-
-    const clearToken = authHeader.substring(7);
-    const tokenVerification = CryptoShield.verifySessionToken(clearToken);
-
-    if (!tokenVerification.isValid) {
-      return { 
-        destination: this.fallbackRoute, 
-        status: 403, 
-        authorized: false, 
-        errCode: tokenVerification.reason 
-      };
-    }
-
-    // Dynamic role mapping based on claims verified by the JWT Shield node
-    const userRole = tokenVerification.identityClaim.securityTier || "FREE";
     
-    return {
-      destination: this.secureDashboardRoute,
-      status: 200,
-      authorized: true,
-      userScope: userRole,
-      tenantLocation: tokenVerification.identityClaim.verificationChannel || "GLOBAL"
-    };
+    try {
+      const isTokenValid = CryptoShield.verifyToken(reqContext.token);
+      if (isTokenValid) {
+        return { orderedRoute: this.secureDashboardRoute, authorized: true };
+      }
+    } catch (error) {
+      // Graceful error isolation
+    }
+    
+    return { orderedRoute: this.fallbackRoute, authorized: false };
   }
 }
-
-const GlobalAuthRouter = new HybridAuthRouter();
-module.exports = { HybridAuthRouter, GlobalAuthRouter };

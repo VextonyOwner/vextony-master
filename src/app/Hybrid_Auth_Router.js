@@ -5,7 +5,7 @@
  */
 
 // Strict relative path mapping inside src/app directory context
-const { CryptoShield } = require("./JWT_Shield");
+const { CryptoShield } = require("./JWT_Shield.js");
 
 class HybridAuthRouter {
   constructor() {

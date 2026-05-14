@@ -14,6 +14,8 @@ export class HybridAuthRouter {
 
   /**
    * Evaluates inbound access parameters and routes request vectors safely via ESM runtime resolution
+   * @param {Object} reqContext - Incoming request headers and metadata
+   * @returns {Object} Target redirection routing mapping containing access authorization status
    */
   routeAuthenticationInbound(reqContext) {
     if (!reqContext || !reqContext.headers) {

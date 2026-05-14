@@ -1,13 +1,8 @@
 /**
  * VEXTONY ENGINE: ZERO-TRUST SESSION INTEGRITY SENTINEL
  * [FILE SERIAL: 052 / 209] | [FILE PATH: src/app/Zero_Trust_Sentinel.ts]
- * [STATUS: ARMED & PRODUCTION-READY] | [PRIVILEGE: REAL-TIME CONTINUOUS BACKGROUND AUDIT]
+ * [STATUS: ARMED & PRODUCTION-READY] | [PRIVILEGE: AUTONOMOUS BACKGROUND AUDIT]
  */
-
-// Strict lowercase-validated relative paths targeted directly inside the local app directory context
-import { VextonyCoreBrain } from "./SovereignIntelligence";
-import { VextonyEngineRuntime } from "./master_logic";
-import GlobalDeviceDetector from "./Device_Detector.js";
 
 export interface ISentinelAuditReport {
   isIntegrityVerified: boolean;
@@ -29,37 +24,50 @@ export class ZeroTrustSentinel {
   }
 
   /**
-   * Continuously audits active session states against browser hardware fingerprint matrices
-   * @param clientToken - Cryptographic token validation string passed via network headers
-   * @param payloadDataStream - Target context stream forwarded to the vault architecture
-   * @returns Pure type-safe ISentinelAuditReport log schema
+   * Continuously audits active session tokens against native browser hardware parameters
+   * @param clientToken - Cryptographic authorization string passed via network headers
+   * @param payloadDataStream - Target payload context stream targeting vault resources
+   * @returns Pure type-safe ISentinelAuditReport confirmation log
    */
   public executeContinuousSessionAudit(clientToken: string, payloadDataStream?: string): ISentinelAuditReport {
     this.totalContinuousAudits++;
 
-    // Assert absolute system runtime baseline stability status checks
-    const structuralState = VextonyEngineRuntime.validateSystemInvariants();
-    if (!structuralState.isSystemStable) {
-      return { isIntegrityVerified: false, securityFingerprint: "0x0000", threatRiskAssessment: "CRITICAL_BREACH" };
+    // Guard gate to check for harmful or malicious input payload streams
+    if (payloadDataStream) {
+      const toxicTriggers = ["shirk", "interest", "riba", "nudity", "pornography", "propaganda"];
+      const lowercasePayload = payloadDataStream.toLowerCase();
+      const isViolation = toxicTriggers.some(trigger => lowercasePayload.includes(trigger));
+      
+      if (isViolation) {
+        return { isIntegrityVerified: false, securityFingerprint: "BLOCKED_VECTOR", threatRiskAssessment: "CRITICAL_BREACH" };
+      }
     }
 
-    // Shield screening validation to reject harmful ingress injection parameters
-    if (payloadDataStream && VextonyCoreBrain.verifyDivineShieldIntegrity(payloadDataStream)) {
-      return { isIntegrityVerified: false, securityFingerprint: "BLOCKED_VECTOR", threatRiskAssessment: "CRITICAL_BREACH" };
+    // Direct window and navigator architecture profiling to block headless scraping bots
+    let isBotDetected = false;
+    let fallbackPlatform = "Unknown_Device";
+
+    if (typeof window !== 'undefined' && typeof navigator !== 'undefined') {
+      fallbackPlatform = navigator.platform || "Web_Client";
+      const userAgentString = navigator.userAgent || "";
+      
+      if (!navigator.webdriver && typeof navigator.webdriver !== 'undefined' || 
+          userAgentString.includes('HeadlessChrome') || 
+          userAgentString.includes('Puppeteer')) {
+        isBotDetected = true;
+      }
     }
 
-    // Track real-time hardware signature anomalies via the device profiling layer
-    const activeHardwareProfile = GlobalDeviceDetector.profileClientDevice();
-    if (activeHardwareProfile.isBot || activeHardwareProfile.deviceScore === 0) {
+    if (isBotDetected) {
       return { isIntegrityVerified: false, securityFingerprint: "BOT_SIGNATURE_DETECTED", threatRiskAssessment: "CRITICAL_BREACH" };
     }
 
-    // Final security confirmation handshake loop for the active session signature
+    // Secure cryptographic string token confirmation validation
     const isSignatureSecure = clientToken !== null && clientToken.startsWith("vextony_sec_") && clientToken.length > 25;
 
     return {
       isIntegrityVerified: isSignatureSecure,
-      securityFingerprint: `vxt_sntnl_${this.totalContinuousAudits}_${activeHardwareProfile.browserPlatform}`,
+      securityFingerprint: `vxt_sntnl_${this.totalContinuousAudits}_${fallbackPlatform}`,
       threatRiskAssessment: isSignatureSecure ? "ZERO_RISK" : "SUSPICIOUS"
     };
   }

@@ -4,8 +4,7 @@
  * [STATUS: ARMED & PRODUCTION-READY] | [PRIVILEGE: AUTH NETWORK LAYER]
  */
 
-const { CryptoShield } = require("./JWT_Shield");
-
+const { CryptoShield } = require("./JWT_Shield.js");
 class HybridAuthRouter {
   constructor() {
     this.fallbackRoute = "/";

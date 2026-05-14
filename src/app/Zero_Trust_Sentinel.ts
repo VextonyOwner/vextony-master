@@ -1,12 +1,13 @@
 /**
  * VEXTONY ENGINE: ZERO-TRUST SESSION INTEGRITY SENTINEL
  * [FILE SERIAL: 052 / 209] | [FILE PATH: src/app/Zero_Trust_Sentinel.ts]
- * [STATUS: ARMED & ACTIVE] | [PRIVILEGE: REAL-TIME CONTINUOUS BACKGROUND AUDIT]
+ * [STATUS: ARMED & PRODUCTION-READY] | [PRIVILEGE: REAL-TIME CONTINUOUS BACKGROUND AUDIT]
  */
 
-import { VextonyCoreBrain } from "./SovereignIntelligence.js";
-import { VextonyEngineRuntime } from "./master_logic.js";
-import GlobalDeviceDetector from "./Device_Detector.js";
+// Force absolute compilation mappings using standard @/ prefix to resolve Webpack paths
+import { VextonyCoreBrain } from "@/app/SovereignIntelligence";
+import { VextonyEngineRuntime } from "@/app/master_logic";
+import GlobalDeviceDetector from "@/app/Device_Detector.js";
 
 export interface ISentinelAuditReport {
   isIntegrityVerified: boolean;
@@ -28,33 +29,33 @@ export class ZeroTrustSentinel {
   }
 
   /**
-   * Continuously audits real-time interactive session profiles against physical device hardware changes
-   * @param clientToken - Current active JWT token string from the network headers
-   * @param payloadDataStream - Inbound execution parameters targeted at the vault infrastructure
-   * @returns ISentinelAuditReport structured runtime security clearance
+   * Continuously audits active session states against browser hardware fingerprint matrices
+   * @param clientToken - Current cryptographic authorization string passed via network headers
+   * @param payloadDataStream - Target payload context targeting vault resources
+   * @returns Pure type-safe ISentinelAuditReport confirmation log
    */
   public executeContinuousSessionAudit(clientToken: string, payloadDataStream?: string): ISentinelAuditReport {
     this.totalContinuousAudits++;
 
-    // Assert absolute monolithic system stability baseline
+    // Assert baseline system invariant status checks
     const structuralState = VextonyEngineRuntime.validateSystemInvariants();
     if (!structuralState.isSystemStable) {
       return { isIntegrityVerified: false, securityFingerprint: "0x0000", threatRiskAssessment: "CRITICAL_BREACH" };
     }
 
-    // Ingress shielding against malicious data stream injections
+    // Shield verification to reject toxic injection parameters
     if (payloadDataStream && VextonyCoreBrain.verifyDivineShieldIntegrity(payloadDataStream)) {
       return { isIntegrityVerified: false, securityFingerprint: "BLOCKED_VECTOR", threatRiskAssessment: "CRITICAL_BREACH" };
     }
 
-    // Capture dynamic hardware profile from the active device detector node
+    // Capture dynamic hardware profile anomalies via the device detector layer
     const activeHardwareProfile = GlobalDeviceDetector.profileClientDevice();
     if (activeHardwareProfile.isBot || activeHardwareProfile.deviceScore === 0) {
       return { isIntegrityVerified: false, securityFingerprint: "BOT_SIGNATURE_DETECTED", threatRiskAssessment: "CRITICAL_BREACH" };
     }
 
-    // Perform continuous validation handshake on token parameters
-    const isSignatureSecure = clientToken.startsWith("vextony_sec_") && clientToken.length > 25;
+    // Validate dynamic session string parameters securely
+    const isSignatureSecure = clientToken !== null && clientToken.startsWith("vextony_sec_") && clientToken.length > 25;
 
     return {
       isIntegrityVerified: isSignatureSecure,

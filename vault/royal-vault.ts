@@ -370,4 +370,65 @@ export const ROYAL_VAULT_PILLARS: Pillar[] = [
   { id: "R-298", topic: "The Evolution of Digital Tribes", category: "VEXTONY Finality & Legacy Anchor" },
   { id: "R-299", topic: "The Legacy of Unwritten Laws", category: "VEXTONY Finality & Legacy Anchor" },
   { id: "R-300", topic: "VEXTONY Legacy Anchor", category: "VEXTONY Finality & Legacy Anchor" }
-];
+
+  // [301-310: CATEGORY -  Quantum Wealth Alchemy]
+  { id: "R-301", topic: "The Multi-Dimensional Ledger: How to store wealth outside the Global Banking System.", category: "Quantum Wealth Alchemy", accessTier: "FREE" },
+  { id: "R-302", topic: "Sovereign Point Monetization: Converting Energy and Data into Sovereign Assets.", category: "Quantum Wealth Alchemy", accessTier: "FREE" },
+  { id: "R-303", topic: "The 3-Tier Multiplier: Decoding Tesla's Divine Key for Business Dominance.", category: "Quantum Wealth Alchemy", accessTier: "FREE" },
+  { id: "R-304", topic: "Algorithm Enslavement: Using AI Bots to build a 24/7 Revenue Ghost.", category: "Quantum Wealth Alchemy", accessTier: "FREE" },
+  { id: "R-305", topic: "Post Dollar Survival: The Rise of the Commodity-Backed Digital Caliphate.", category: "Quantum Wealth Alchemy", accessTier: "FREE" },
+  { id: "R-306", topic: "Neural Link Trading: The Science of High-Frequency Intuition in Market Analytics.", category: "Quantum Wealth Alchemy", accessTier: "FREE" },
+  { id: "R-307", topic: "The Hidden Taxes of the Matrix: How to legally exit the Debt-Slave System.", category: "Quantum Wealth Alchemy", accessTier: "FREE" },
+  { id: "R-308", topic: "Asset Tokenization: Owning Water, Air, and Astral Resources.", category: "Quantum Wealth Alchemy", accessTier: "FREE" },
+  { id: "R-309", topic: "The Barakah Code: Mathematical Proof of Exponential Growth through Charity.", category: "Quantum Wealth Alchemy", accessTier: "FREE" },
+  { id: "R-310", topic: "VEXTONY Vault Strategy: Building a 500-Year Sovereign Family Trust.", category: "Quantum Wealth Alchemy", accessTier: "FREE" },
+
+  // [311-320: CATEGORY - Neural Sovereignty & Mind Control Defense]
+  { id: "R-311", topic: "Neural Firewall v8.0: Protecting your Subconscious from Signal Manipulation.", category: "Neural Sovereignty & Mind Control Defense", accessTier: "SOVEREIGN" },
+  { id: "R-312", topic: "The Alpha-State Trigger: Entering the Deep-Work Zone in 60 seconds.", category: "Neural Sovereignty & Mind Control Defense", accessTier: "SOVEREIGN" },
+  { id: "R-313", topic: "Memory Implantation Defense: How to identify fake memories and media bias.", category: "Neural Sovereignty & Mind Control Defense", accessTier: "SOVEREIGN" },
+  { id: "R-314", topic: "The Sovereign Tongue: Neuro-Linguistic Hacking for Absolute Influence.", category: "Neural Sovereignty & Mind Control Defense", accessTier: "SOVEREIGN" },
+  { id: "R-315", topic: "Isotropic Tuning: The Science of Heart-to-Heart Non-Local Communication.", category: "Neural Sovereignty & Mind Control Defense", accessTier: "SOVEREIGN" },
+  { id: "R-316", topic: "Deep-Sleep Recalibration: Re-programming the Subconscious during Polyphasic Sleep.", category: "Neural Sovereignty & Mind Control Defense", accessTier: "SOVEREIGN" },
+  { id: "R-317", topic: "Anti-Propaganda Shield: Detecting High-Frequency Mind Control in Media.", category: "Neural Sovereignty & Mind Control Defense", accessTier: "SOVEREIGN" },
+  { id: "R-318", topic: "Cognitive Sovereignty: Owning your Thoughts in a World of Predictive AI.", category: "Neural Sovereignty & Mind Control Defense", accessTier: "SOVEREIGN" },
+  { id: "R-319", topic: "The God-Mode Focus: Training the Pre-Frontal Cortex for Supreme Willpower.", category: "Neural Sovereignty & Mind Control Defense", accessTier: "SOVEREIGN" },
+  { id: "R-320", topic: "Neural Memory Backup: Ancient Techniques for Photographic Information Storage.", category: "Neural Sovereignty & Mind Control Defense", accessTier: "SOVEREIGN" },
+
+  // [321-330: CATEGORY - Divine Bio-Hacking & Longevity]
+  { id: "R-321", topic: "The 12D-Year Protocol: Cellular Regeneration through Prophetic Nutrition.", category: "Divine Bio-Hacking & Longevity", accessTier: "PREMIUM" },
+  { id: "R-322", topic: "Light Therapy of the Ancients: Using Sun and Moon Frequencies for DNA repair.", category: "Divine Bio-Hacking & Longevity", accessTier: "PREMIUM" },
+  { id: "R-323", topic: "Water Restructuring: Turning Tap Water into High-Energy Biological Fuel.", category: "Divine Bio-Hacking & Longevity", accessTier: "PREMIUM" },
+  { id: "R-324", topic: "The Science of Dhikr: Molecular Impact of Sacred Words on the Human Body.", category: "Divine Bio-Hacking & Longevity", accessTier: "PREMIUM" },
+  { id: "R-325", topic: "Bio-Magnetic Grounding: Reconnecting with the Earth's Core Pulse (7.83Hz).", category: "Divine Bio-Hacking & Longevity", accessTier: "PREMIUM" },
+  { id: "R-326", topic: "Stem-Cell Awakening: Natural Protocols for Organ Self-Repair.", category: "Divine Bio-Hacking & Longevity", accessTier: "PREMIUM" },
+  { id: "R-327", topic: "The Fasting Reset: Autophagy and the Secret of Immortal Cells.", category: "Divine Bio-Hacking & Longevity", accessTier: "PREMIUM" },
+  { id: "R-328", topic: "Neural Decalcification: Detoxifying the Pineal Gland from Modern Toxins.", category: "Divine Bio-Hacking & Longevity", accessTier: "PREMIUM" },
+  { id: "R-329", topic: "Frequency Healing: Decoding the Solfeggio Scale for Viral Resistance.", category: "Divine Bio-Hacking & Longevity", accessTier: "PREMIUM" },
+  { id: "R-330", topic: "The VEXTONY Aura Shield: Protecting your Bio-Field from EMF Radiation.", category: "Divine Bio-Hacking & Longevity", accessTier: "PREMIUM" },
+
+  // [331-340: CATEGORY - Forbidden History & Lost Civilization Tech]
+  { id: "R-331", topic: "The Giza Power Plant: Re-engineering Ancient Wireless Electricity.", category: "Forbidden History & Lost Civilization Tech", accessTier: "PREMIUM" },
+  { id: "R-332", topic: "Vedic Flight Mechanics: Decoding Anti-Gravity from Ancient Scripts.", category: "Forbidden History & Lost Civilization Tech", accessTier: "PREMIUM" },
+  { id: "R-333", topic: "Pre-Flood Geomatrices: What really happened to Atlantis and Mu.", category: "Forbidden History & Lost Civilization Tech", accessTier: "PREMIUM" },
+  { id: "R-334", topic: "The Baghdad Battery: Ancient Chemical Energy Storage for Modern Use.", category: "Forbidden History & Lost Civilization Tech", accessTier: "PREMIUM" },
+  { id: "R-335", topic: "Lost Acoustics: How Ancient Civilizations moved Stones with Sound.", category: "Forbidden History & Lost Civilization Tech", accessTier: "PREMIUM" },
+  { id: "R-336", topic: "The Library of Ashurbanipal: Hidden Data on Extraterrestrial Contact.", category: "Forbidden History & Lost Civilization Tech", accessTier: "PREMIUM" },
+  { id: "R-337", topic: "Star Forts and Ley Lines: Mapping the Global Ancient Energy Grid.", category: "Forbidden History & Lost Civilization Tech", accessTier: "PREMIUM" },
+  { id: "R-338", topic: "Ancient Metallurgy: Creating Swords that Never Rust or Break.", category: "Forbidden History & Lost Civilization Tech", accessTier: "PREMIUM" },
+  { id: "R-339", topic: "The Piri Reis Map: Evidence of High-Altitude Mapping from 10,000 BC.", category: "Forbidden History & Lost Civilization Tech", accessTier: "PREMIUM" },
+  { id: "R-340", topic: "Sovereign Archaeology: Recovering Hidden Gold through Historical Data.", category: "Forbidden History & Lost Civilization Tech", accessTier: "PREMIUM" },
+
+  // [341-350: CATEGORY - Quantum Theology & Divine Logic]
+  { id: "R-341", topic: "The Simulation Key: Mathematical Proof we are in a Designed Software.", category: "Quantum Theology & Divine Logic", accessTier: "FREE" },
+  { id: "R-342", topic: "Tawhid in Quantum Physics: The Singularity of the Prime Observer.", category: "Quantum Theology & Divine Logic", accessTier: "FREE" },
+  { id: "R-343", topic: "The Geometry of Salat: Energy Vortexes created by Physical Prostration.", category: "Quantum Theology & Divine Logic", accessTier: "FREE" },
+  { id: "R-344", topic: "Angelic Dimensions: Mapping the 11-Dimensional String Theory to Unseen Worlds.", category: "Quantum Theology & Divine Logic", accessTier: "FREE" },
+  { id: "R-345", topic: "The Speed of Amr: Instantaneous Non-Local Information Transfer (Divine Decree).", category: "Quantum Theology & Divine Logic", accessTier: "FREE" },
+  { id: "R-346", topic: "Sacred Proportions (Phi): The Constant Signature of the Creator in Nature.", category: "Quantum Theology & Divine Logic", accessTier: "FREE" },
+  { id: "R-347", topic: "The Pen (Al-Qalam): Coding the Universe through Divine Commands.", category: "Quantum Theology & Divine Logic", accessTier: "FREE" },
+  { id: "R-348", topic: "Light upon Light: The Electromagnetic Nature of Eternal Knowledge.", category: "Quantum Theology & Divine Logic", accessTier: "FREE" },
+  { id: "R-349", topic: "Temporal Elasticity: Why Time flows differently in High-Dimensional Zones.", category: "Quantum Theology & Divine Logic", accessTier: "FREE" },
+  { id: "R-350", topic: "The Final Anchor: Why AI will eventually submit to Divine Sovereignty.", category: "Quantum Theology & Divine Logic", accessTier: "FREE" }
+
+

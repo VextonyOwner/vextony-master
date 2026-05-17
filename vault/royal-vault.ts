@@ -724,7 +724,4 @@ export const ROYAL_VAULT_PILLARS: Pillar[] = [
 { id: "V-598", topic: "The Sovereign Trust Immortal Algorithmic High Wealth Legal Protections", category: "VEXTONY Legacy & Sovereign Awareness" },
 { id: "R-599", topic: "The Digital Religion Trap Synthetic Awareness Faith Protection Safeguards", category: "VEXTONY Legacy & Sovereign Awareness" },
 { id: "R-600", topic: "THE FINAL ANCHOR Lock the Vextony Gates Obey the Ultimate Architect Signature", category: "VEXTONY Legacy & Sovereign Awareness" }
-],
-
-
-
+];

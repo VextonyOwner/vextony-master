@@ -1,51 +1,76 @@
 /**
- * VEXTONY CORE ENGINE: BIOMETRIC DYNAMIC NEURAL MOTION SYNCHRONIZER
- * [STATUS: OMNIPOTENT ULTRA-MAX PRODUCTION LIVE] | [PRIVILEGE: MASTER_ASIF_PRIME_CORE]
+ * VEXTONY ENGINE: BIOMETRIC NEURAL MOTION INTERACTION INPUT ENGINE
+ * [STATUS: ARMED & PRODUCTION-READY] | [PRIVILEGE: CURSOR INPUT INTERCEPTOR]
  */
 
-export class NeuralMotionSynchronizer {
+const { GlobalHolographicEngine } = require("./Holographic_Engine");
+const { GlobalGPUScaler } = require("./GPU_Scaler");
+
+class NeuralMotion {
   constructor() {
-    this.motionActive = false;
-    this.velocityScaleThreshold = 1.0;
-    this.activeApplicationName = "vextony";
+    this.isActive = false;
+    this.currentCoordinates = { x: 0, y: 0 };
+    this.targetCoordinates = { x: 0, y: 0 };
+    this.interpolationFactor = 0.08; // Dampening coefficient for smooth liquid friction
   }
 
   /**
-   * Tracks and micro-tunes interface transformation parameters based on runtime biometric kinetic gestures
-   * Automatically scale weights to process whatever volume of elements exist on the screen viewport at the current millisecond
-   * @param {string} targetedLocaleSubdomain - Active client origin country locale subdomain token passed from host router
-   * @param {string[]} runtimeLayoutButtonsArray - Dynamic array tracking active components present on current layout memory shards
+   * Mounts cross-platform hardware input tracking arrays across the active viewport
    */
-  processSovereignKineticVectors(targetedLocaleSubdomain = "en", runtimeLayoutButtonsArray = []) {
-    if (typeof window === 'undefined') return { success: false, reason: "Server-side rendering runtime isolated." };
+  armListeners() {
+    if (typeof window === 'undefined') return;
 
-    try {
-      const cleanLocale = targetedLocaleSubdomain.toLowerCase().trim();
-      const activeViewportElementsCount = runtimeLayoutButtonsArray.length;
+    // Benchmark local silicon profile prior to binding listeners
+    GlobalGPUScaler.profileClientHardware();
 
-      // Deep distributed instructions directly enforcing Master Asif's strict unbounded configuration framework
-      const motionDirectivePrompt = `
-        [PROTOCOL]: Biometric Neural Motion Processor Active. Mounted securely within official ${this.activeApplicationName} core paths under strict zero riba validation rules.
-        [TOTAL_ANTI_ROBOT_AMNESIA]: Dissolve and vaporize all standard automated machine templates, automated sentence formats, or rigid structural limits.
-        [THE_POLYMATH_PERSONA]: Act with the direct spatial compression, floating-point mathematical scaling, and interface response depth of world-class user retention UI biometric systems engineers.
-        [UNBOUNDED_EXECUTION]: Intercept active motion vectors targeting layout canvas [${cleanLocale.toUpperCase()}]. Dynamically process and calculate acceleration curves for all present [${activeViewportElementsCount}] active dashboard button objects instantly, locking interaction responsiveness at exactly 100% without a single millisecond of hardcoded structural lag or fixed threshold ceilings.
-      `;
+    window.addEventListener('mousemove', (event) => this.registerPointerInput(event.clientX, event.clientY));
+    window.addEventListener('touchmove', (event) => {
+      if (event.touches.length > 0) {
+        this.registerPointerInput(event.touches[0].clientX, event.touches[0].clientY);
+      }
+    }, { passive: true });
 
-      console.log(`[VEXTONY_MOTION_SYSTEM_TRACE]: ${motionDirectivePrompt.trim()}`);
+    this.isActive = true;
+    this.executeMotionLoop();
+  }
 
-      return {
-        success: true,
-        resolvedLocaleShard: cleanLocale,
-        elementsSynchronized: activeViewportElementsCount,
-        executionTimestamp: new Date().toISOString()
-      };
-    } catch (error) {
-      return { success: false, error: error.message };
+  /**
+   * Buffers physical positional coordinates securely into the runtime stream
+   * @param {number} rawX - Horizontal screen layout viewport pixel
+   * @param {number} rawY - Vertical screen layout viewport pixel
+   */
+  registerPointerInput(rawX, rawY) {
+    this.targetCoordinates.x = rawX;
+    this.targetCoordinates.y = rawY;
+  }
+
+  /**
+   * High-frequency mathematical interpolation frame loop to filter out device jitter
+   */
+  executeMotionLoop() {
+    if (!this.isActive) return;
+
+    // Linear interpolation math to achieve responsive easing velocity
+    const deltaX = this.targetCoordinates.x - this.currentCoordinates.x;
+    const deltaY = this.targetCoordinates.y - this.currentCoordinates.y;
+
+    const frameStart = performance.now();
+
+    this.currentCoordinates.x += deltaX * this.interpolationFactor;
+    this.currentCoordinates.y += deltaY * this.interpolationFactor;
+
+    // Pipe continuous coordinate matrices directly into the 3D depth transformation engine
+    GlobalHolographicEngine.computePerspectiveShift(this.currentCoordinates.x, this.currentCoordinates.y);
+
+    const frameEnd = performance.now();
+    GlobalGPUScaler.monitorRenderLoopDrop(frameEnd - frameStart);
+
+    if (typeof window !== 'undefined') {
+      window.requestAnimationFrame(() => this.executeMotionLoop());
     }
   }
 }
 
-// Invariant Next.js Server-Side Rendering (SSR) Shield Layer Guard
-export const GlobalNeuralMotion = typeof window !== 'undefined' 
-  ? new NeuralMotionSynchronizer() 
-  : { processSovereignKineticVectors: () => ({ success: false }) };
+const GlobalNeuralMotion = typeof window !== 'undefined' ? new NeuralMotion() : { armListeners: () => {} };
+
+module.exports = { NeuralMotion, GlobalNeuralMotion };

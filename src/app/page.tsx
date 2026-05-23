@@ -40,7 +40,7 @@ export default function VextonyMasterPage() {
           STATUS: <span style={{ color: "#4ade80", fontWeight: "bold" }}>{status}</span>
         </p>
         <button 
-          onClick={() => setStatus("COMPILING ALL 209 MASTER NODES... SUCCESS.")}
+          onClick={() => setStatus("COMPILING ALL PRESENT SYSTEM MASTER NODES... SUCCESS.")}
           style={{
             padding: "12px 24px",
             border: "1px solid #D4AF37",

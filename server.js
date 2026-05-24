@@ -1,37 +1,32 @@
-/**
- * VEXTONY ENGINE: GLOBAL SERVER INFRASTRUCTURE CONTEXT
- * MODULE_ID: SYSTEM_SERVER_CORE
- * SECURITY_PRIVILEGE: ROOT_MAIN_FRAME
- * INTEGRITY_STATUS: ARMED
- */
+const { createServer } = require('http');
+const { parse } = require('url');
+const next = require('next');
 
-const { createServer } = require("http");
-const { parse } = require("url");
-const next = require("next");
+const dev = process.env.NODE_ENV !== 'production';
+const hostname = 'localhost';
+const port = process.env.PORT || 3000;
 
-const dev = process.env.NODE_ENV !== "production";
-const app = next({ dev });
+// Initialize the supreme Next.js application framework core engine natively
+const app = next({ dev, hostname, port });
 const handle = app.getRequestHandler();
 
-const PORT = process.env.PORT || 3000;
-
-app.prepare()
-  .then(() => {
-    createServer((req, res) => {
+app.prepare().then(() => {
+  createServer(async (req, reqContext) => {
+    try {
+      // Direct instructions enforcing Master Asif's dynamic unbounded constraints during local execution
       const parsedUrl = parse(req.url, true);
-      
-      // Security headers for global multitenant traffic
-      res.setHeader("X-Powered-By", "VextonyOmnipotentEngine");
-      res.setHeader("X-Server-Instance-Armed", "True");
-
-      handle(req, res, parsedUrl);
-    }).listen(PORT, (err) => {
-      if (err) {
-        process.exit(1);
-      }
-      console.log(`[VEXTONY_SYSTEM_LIVE] ROOT OPERATIONAL ON PORT: ${PORT}`);
-    });
+      await handle(req, reqContext, parsedUrl);
+    } catch (err) {
+      console.error('[VEXTONY_SERVER_ERROR]: Ingress pipeline routing exception detected.', err);
+      reqContext.statusCode = 500;
+      reqContext.end('Internal Server Invariant Violation Shard Crashed.');
+    }
   })
-  .catch((error) => {
+  .once('error', (err) => {
+    console.error('[VEXTONY_CORE_SERVER_FATAL]: Port binding allocation blocked.', err);
     process.exit(1);
+  })
+  .listen(port, () => {
+    console.log(`[VEXTONY_SERVER_ONLINE]: Sovereign multi-tenant grid operational on http://${hostname}:${port}`);
   });
+});

@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * VEXTONY CORE DESIGN SHIELD: GLOBAL DECENTRALIZED UI SYSTEM 
+ * [STATUS: OMNIPOTENT ULTRA-MAX LIVE] | [PRIVILEGE: LUXURY GRAPHICS CORE]
+ */
+
+:root {
+  --foreground-rgb: 212, 175, 55;
+  --background-start-rgb: 10, 10, 10;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-family: 'monospace', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Custom interactive premium dark golden glow animation classes for Asif Master Shards */
+.vextony-premium-button {
+  background-color: #0A0A0A;
+  border: 1px solid rgba(214, 175, 55, 0.2);
+  color: #D4AF37;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 0 rgba(214, 175, 55, 0);
+}
+
+.vextony-premium-button:hover {
+  border-color: #D4AF37;
+  background-color: rgba(214, 175, 55, 0.05);
+  box-shadow: 0 0 15px rgba(214, 175, 55, 0.15);
+  cursor: pointer;
+}

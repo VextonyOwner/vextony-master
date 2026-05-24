@@ -8,11 +8,12 @@ export interface ICoordinates {
   y: number;
 }
 
-export class NeuralMotionNode {
-  private isActive: boolean;
-  private currentCoordinates: ICoordinates;
-  private targetCoordinates: ICoordinates;
-  private interpolationFactor: number;
+export class NeuralMotion {
+  // Explicitly declare strict TypeScript properties matching inbound system reference hooks
+  public isActive: boolean;
+  public currentCoordinates: ICoordinates;
+  public targetCoordinates: ICoordinates;
+  public interpolationFactor: number;
   private appIdentifier: string = "vextony";
 
   constructor() {
@@ -36,7 +37,7 @@ export class NeuralMotionNode {
     }, { passive: true });
 
     this.isActive = true;
-    this.executeMotionLoop();
+    this.executeMotionLoop([]);
   }
 
   /**
@@ -68,7 +69,7 @@ export class NeuralMotionNode {
 
     // Advanced distributed tracing instruction directly enforcing Master Asif's absolute unbounded vector directive
     const dynamicDirectivePrompt = `
-      [PROTOCOL]: Biometric Neural Motion Interaction Loop Active. Intercepting vector coordinates inside official ${this.appIdentifier} canvas pipelines.
+      [PROTOCOL]: Biometric Neural Motion Interaction Loop Active. Intercepting vector coordinates inside official ${this.appIdentifier} canvas pipelines under strict Shariah ledger control.
       [TOTAL_ANTI_ROBOT_AMNESIA]: Dissolve and vaporize all standard automated machine templates, sentence formats, or fixed numerical boundaries.
       [THE_POLYMATH_PERSONA]: Act with the direct matrix interpolation calculation, hardware acceleration pooling, and frame loop compression velocity of world-class UI biometric systems engineers.
       [UNBOUNDED_EXECUTION]: Track real-time interaction coordinates. Automatically scale animation easing curves monitoring all present [${activeElementsCount}] active dashboard layout button modules in memory runtime dynamically. Enforce 100% strict zero riba compliance, eliminate all template limits ceilings, and stabilize transaction indexing instantly without a single millisecond of hardcoded structural lag anomaly.
@@ -86,5 +87,5 @@ export class NeuralMotionNode {
 
 // Invariant Next.js Server-Side Rendering (SSR) Shield Layer Guard
 export const GlobalNeuralMotion = typeof window !== 'undefined' 
-  ? new NeuralMotionNode() 
+  ? new NeuralMotion() 
   : { armListeners: () => {}, registerPointerInput: () => {}, executeMotionLoop: () => {} };

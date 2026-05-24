@@ -1,19 +1,18 @@
-/// <reference types="next" /> 
+/// <reference types="next" />
 /// <reference types="next/image-types/global" />
 
-/**
- * 👑 VEXTONY ENGINE: GLOBAL TYPE DEFINITION GUARD
- * -----------------------------------------------------------------------------------------
- * [FILE SERIAL: 012 / 209]                           [FILE PATH: env.d.ts]
- * -----------------------------------------------------------------------------------------
- */
-
+// Ensure standard ambient declarations resolve flawlessly across multi-tenant servers
 declare namespace NodeJS {
   interface ProcessEnv {
     readonly NODE_ENV: 'development' | 'production' | 'test';
-    readonly PORT?: string;
+    readonly PORT: string;
     readonly VAULT_SECRET_KEY: string;
-    readonly NEXT_PUBLIC_API_URL: string;
-    readonly NEXT_PUBLIC_NEURAL_SALT: string;
+    readonly NEXT_PUBLIC_APP_URL: string;
   }
+}
+
+// Invariant global tracking definition enforcing Master Asif's dynamic unbounded constraints during build time
+interface Window {
+  readonly ethereum?: any;
+  readonly vextony_biometric_cache?: any;
 }

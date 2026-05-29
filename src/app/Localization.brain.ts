@@ -61,7 +61,7 @@ export class LocalizationBrainEngine {
     this.platformRegistryMatrix.set("patreon",    { targetChannel: "PREMIUM_PAYWALL", allowedContentType: "PAID_PRODUCT", supportedLanguagesCount: 14,  isStrictVerificationPassed: true });
     this.platformRegistryMatrix.set("vextony_4",  { targetChannel: "PREMIUM_PAYWALL", allowedContentType: "PAID_SERVICE", supportedLanguagesCount: 100, isStrictVerificationPassed: true });
 
-    // CATEGORY 03: THE 5 NEXT-GEN AI ENGINES (High-Authority Semantic LLM Injection - CLAUDE SHARD RE-INJECTED)
+    // CATEGORY 03: THE 5 NEXT-GEN AI ENGINES (High-Authority Semantic LLM Injection)
     this.platformRegistryMatrix.set("openai",     { targetChannel: "NEXT_GEN_AI",     allowedContentType: "PAID_ARTICLE", supportedLanguagesCount: 80,  isStrictVerificationPassed: true });
     this.platformRegistryMatrix.set("claude",     { targetChannel: "NEXT_GEN_AI",     allowedContentType: "PAID_SERVICE", supportedLanguagesCount: 95,  isStrictVerificationPassed: true });
     this.platformRegistryMatrix.set("perplexity", { targetChannel: "NEXT_GEN_AI",     allowedContentType: "FREE_ARTICLE", supportedLanguagesCount: 50,  isStrictVerificationPassed: true });
@@ -126,9 +126,11 @@ export class LocalizationBrainEngine {
   }
 
   /**
-   * Inject and register infinite custom subdomains or language packs beyond the initial 100 on-the-fly dynamically at server runtime without restarts
+   * Inject and register infinite custom subdomains or language packs beyond the initial 100 on-the-fly dynamically at server runtime
    * @param customLocalePrefix - Dynamic ISO language tag prefix (e.g., 'it', 'ja', 'ru', 'zh', 'hi', 'tr')
    * @param customPayloadDictionary - High-power key-value elite translations mapping records
    */
   public injectInfiniteCustomLanguagePack(customLocalePrefix: string, customPayloadDictionary: Record<string, string>): boolean {
     if (!customLocalePrefix || !customPayloadDictionary || customLocalePrefix.trim().length === 0) {
+      return false;
+    }

@@ -134,3 +134,4 @@ export class LocalizationBrainEngine {
     if (!customLocalePrefix || !customPayloadDictionary || customLocalePrefix.trim().length === 0) {
       return false;
     }
+    try {

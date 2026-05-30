@@ -6,8 +6,6 @@
  * [ARCHITECTURE STANDARD: SUPREME ARCHITECT / GLOBAL OVERRIDE v107 - PURE ENGLISH CORE]
  */
 
-import { VextonyAIConstitution } from "./Sovereign_Constitution_60";
-
 export interface IPlatformRoutingDirective {
   targetChannel: "SEARCH_CORE" | "PREMIUM_PAYWALL" | "NEXT_GEN_AI" | "GLOBAL_ROOT";
   allowedContentType: "FREE_ARTICLE" | "PAID_ARTICLE" | "PAID_SERVICE" | "PAID_PRODUCT";
@@ -84,11 +82,7 @@ export class LocalizationBrainEngine {
    * @param inboundSubdomainPrefixToken - Extracted subdomain identifier string passed from active ingress routers
    * @param clientRequestReferrerHeader - Technical connection string verifying inbound platform referrers dynamically
    */
-  public resolveAndEnforceStrictRoute(
-    inboundSubdomainPrefixToken: string = "", 
-    clientRequestReferrerHeader: string = ""
-  ): ILanguagePackManifest {
-    
+  public resolveAndEnforceStrictRoute(inboundSubdomainPrefixToken: string = "", clientRequestReferrerHeader: string = ""): ILanguagePackManifest {
     let targetingLocalePrefix = inboundSubdomainPrefixToken.trim().toLowerCase() || this.defaultFallbackLocale;
     const cleanReferrer = clientRequestReferrerHeader.toLowerCase().trim();
     
@@ -109,9 +103,8 @@ export class LocalizationBrainEngine {
     else if (cleanReferrer.includes("openai.com")) activePlatformKey = "openai";
     else if (cleanReferrer.includes("claude.ai") || cleanReferrer.includes("anthropic.com")) activePlatformKey = "claude";
     else if (cleanReferrer.includes("perplexity.ai")) activePlatformKey = "perplexity";
-    else if (cleanReferrer.includes("://google.com")) activePlatformKey = "gemini";
+    else if (cleanReferrer.includes("://google.com") || cleanReferrer.includes("gemini.com")) activePlatformKey = "gemini";
     else if (cleanReferrer.includes("meta.ai")) activePlatformKey = "meta";
-    else if (cleanReferrer.includes("vextony")) activePlatformKey = "vextony_4";
 
     // Extract pre-seeded directive layout matching identified token node
     let activeRoutingDirective = this.platformRegistryMatrix.get(activePlatformKey);
@@ -129,7 +122,7 @@ export class LocalizationBrainEngine {
     // SOLID TERMINAL RETURN CONTRACT: Sealing control flow leakage completely
     return {
       resolvedTargetLocale: targetingLocalePrefix,
-      extractedSubdomainPrefix: targetingLocalePrefix,
+      extractedSubdomainPrefix: targetingLocalePrefix === "en" ? "GLOBAL_ROOT" : targetingLocalePrefix.toUpperCase(),
       routingReport: activeRoutingDirective,
       computedEntropyScore: 99.99,
       timestamp: new Date().toISOString()
@@ -138,12 +131,10 @@ export class LocalizationBrainEngine {
 
   /**
    * Inject custom language pack vector mapping arrays under strict 60-layer human constitution laws
+   * @param customLocalePrefix - Target culture country prefix registry identifier
+   * @param customPayloadDictionary - High-power key-value elite translations mapping records
    */
-  public injectInfiniteCustomLanguagePack(
-    customLocalePrefix: string, 
-    customPayloadDictionary: Record<string, string>
-  ): boolean {
-    
+  public injectInfiniteCustomLanguagePack(customLocalePrefix: string, customPayloadDictionary: Record<string, string>): boolean {
     if (!customLocalePrefix || !customPayloadDictionary || customLocalePrefix.trim().length === 0) {
       return false;
     }

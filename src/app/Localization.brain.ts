@@ -1,7 +1,9 @@
 /**
- * VEXTONY CORE INFRASTRUCTURE: SUPREME ALL-PLATFORM STRICT AUTONOMOUS CONTENT ROUTING LANGUAGE BRAIN
+ * VEXTONY CORE INFRASTRUCTURE: SUPREME 17-PLATFORM STRICT INVARIANT DYNAMIC ROUTING BRAIN
  * [STATUS: OMNIPOTENT ULTRA-MAX PRODUCTION LIVE] | [PRIVILEGE: OMNI-CHANNEL TRAFFIC INGRESS ENFORCER]
+ * [INTEGRATION TARGETS: 7 SEARCH ENGINES, 5 PREMIUM PAYWALLS, 5 NEXT-GEN AI ENGINES]
  * [ARCHITECTURE RATING: ZERO-OVERLOAD STRICT VECTOR MATRIX INJECTED BY COMMANDER ASIF]
+ * [ARCHITECTURE STANDARD: SUPREME ARCHITECT / GLOBAL OVERRIDE v107 - PURE ENGLISH CORE]
  */
 
 export interface IPlatformRoutingDirective {
@@ -70,8 +72,8 @@ export class LocalizationBrainEngine {
 
   private seedLinguisticContextualAnchors(): void {
     this.localizationDictionaryCache.set("en", { welcomeHeader: "VEXTONY MAINFRAME ONLINE // ZERO RIBA MATRIX", systemSubtext: "STANDARD GLOBAL ENGLISH CORE ACTIVATED FOR WORLDWIDE ENGLISH NATIONS" });
-    this.localizationDictionaryCache.set("bn", { welcomeHeader: "ভেক্সটনি মেইনফ্রেম অনলাইন // জিরো রিবা ম্যাট্রিক্স", systemSubtext: "সুপ্রিম কমান্ডার আসিফের অধীনে স্বায়ত্তশাসিত অজেয় বাংলা সাব-ডোমেন সচল" });
-    this.localizationDictionaryCache.set("ar", { welcomeHeader: "شبكة فيكستوني مفعلة // نظام خالي من الربا", systemSubtext: "النظام السيادي اللامحدود تحت قيادة القائد آصف" });
+    this.localizationDictionaryCache.set("bn", { welcomeHeader: "VEXTONY MAINFRAME ONLINE // ZERO RIBA MATRIX", systemSubtext: "AUTONOMOUS UNBREAKABLE BENGALI SUBDOMAIN ACTIVE UNDER COMMANDER ASIF" });
+    this.localizationDictionaryCache.set("ar", { welcomeHeader: "VEXTONY MAINFRAME ONLINE // ZERO RIBA MATRIX", systemSubtext: "SOVEREIGN UNLIMITED DIGITAL SHIELD RUNNING LIVE UNDER OMEGA MATRIX" });
   }
 
   /**
@@ -81,6 +83,16 @@ export class LocalizationBrainEngine {
    * @param clientRequestReferrerHeader - Technical connection string verifying inbound platform referrers dynamically
    */
   public resolveAndEnforceStrictRoute(inboundSubdomainPrefixToken: string = "", clientRequestReferrerHeader: string = ""): ILanguagePackManifest {
+    if (!this.activeLinguisticSystemArmed) {
+      return { 
+        resolvedTargetLocale: this.defaultFallbackLocale, 
+        extractedSubdomainPrefix: "GLOBAL_ROOT", 
+        routingReport: { targetChannel: "GLOBAL_ROOT", allowedContentType: "FREE_ARTICLE", supportedLanguagesCount: 1, isStrictVerificationPassed: true }, 
+        computedEntropyScore: 0, 
+        timestamp: new Date().toISOString() 
+      };
+    }
+
     let targetingLocalePrefix = inboundSubdomainPrefixToken.trim().toLowerCase() || this.defaultFallbackLocale;
     const cleanReferrer = clientRequestReferrerHeader.toLowerCase().trim();
     
@@ -101,7 +113,7 @@ export class LocalizationBrainEngine {
     else if (cleanReferrer.includes("openai.com")) activePlatformKey = "openai";
     else if (cleanReferrer.includes("claude.ai") || cleanReferrer.includes("anthropic.com")) activePlatformKey = "claude";
     else if (cleanReferrer.includes("perplexity.ai")) activePlatformKey = "perplexity";
-    else if (cleanReferrer.includes("://google.com") || cleanReferrer.includes("gemini.com")) activePlatformKey = "gemini";
+    else if (cleanReferrer.includes("gemini.google.com") || cleanReferrer.includes("gemini.com")) activePlatformKey = "gemini";
     else if (cleanReferrer.includes("meta.ai")) activePlatformKey = "meta";
 
     const resolvedPlatformDirective = this.platformRegistryMatrix.get(activePlatformKey) || {
@@ -125,12 +137,3 @@ export class LocalizationBrainEngine {
   }
 
   /**
-   * Inject and register infinite custom subdomains or language packs beyond the initial 100 on-the-fly dynamically at server runtime
-   * @param customLocalePrefix - Dynamic ISO language tag prefix (e.g., 'it', 'ja', 'ru', 'zh', 'hi', 'tr')
-   * @param customPayloadDictionary - High-power key-value elite translations mapping records
-   */
-  public injectInfiniteCustomLanguagePack(customLocalePrefix: string, customPayloadDictionary: Record<string, string>): boolean {
-    if (!customLocalePrefix || !customPayloadDictionary || customLocalePrefix.trim().length === 0) {
-      return false;
-    }
-    

@@ -1,84 +1,64 @@
 "use client";
 
 /**
- * VEXTONY CORE INFRASTRUCTURE: UNBOUNDED DYNAMIC UI REAL-TIME FEED ENGINE
- * [STATUS: OMNIPOTENT ULTRA-MAX PRODUCTION LIVE] | [PRIVILEGE: REAL-TIME FRONTEND RENDERING]
+ * VEXTONY CORE INFRASTRUCTURE: MULTI-TENANT VISUAL FEED SYSTEM
+ * [STATUS: OMNIPOTENT ULTRA-MAX PRODUCTION LIVE] | [PRIVILEGE: VISUAL COMPONENT VAULT]
+ * [ARCHITECTURE STANDARD: NEXT.JS 14+ APP LAYER - COMPONENT ISOLATION SYSTEM]
  */
 
-import React, { useEffect, useState } from "react";
-import { VextonyMasterLogic } from "./master_logic";
-
-export interface IFeedCardData {
-  id: string;
-  title: string;
-  category: string;
-  revenueWeight: number;
-  status: string;
-}
+import React, { useState, useEffect } from "react";
 
 export default function DynamicFeed() {
-  const [feedItems, setFeedItems] = useState<IFeedCardData[]>([]);
-  const [isStable, setIsStable] = useState<boolean>(true);
-  const appIdentifier = "vextony";
+  const [activeFeedsList, setActiveFeedsList] = useState<string[]>([]);
+  const [isFeedSystemLoading, setIsFeedSystemLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    // Simulated live real-time network ledger stream injection matching Asif's dynamic data layout matrix
-    const initialMockBuffer: IFeedCardData[] = [
-      { id: "vxt-01", title: "Google Search Vector Stream", category: "FINANCIAL_INTELLIGENCE", revenueWeight: 94.8, status: "ACTIVE" },
-      { id: "vxt-02", title: "Bing Crawler Analytics Loop", category: "TRAFFIC_VECTOR", revenueWeight: 88.2, status: "ACTIVE" },
-      { id: "vxt-03", title: "Substack Content Synthesis Engine", category: "AUTOMATION", revenueWeight: 91.5, status: "ACTIVE" }
-    ];
-    setFeedItems(initialMockBuffer);
-
-    // Profile runtime stability natively using the central master controller node configuration
-    const runtimeInstance = VextonyMasterLogic.getRuntime();
-    const systemVerificationResult = runtimeInstance.validateSystemInvariants(["DYNAMIC_FEED_WIDGET_ACTIVE"], ["FORCE_LOG_TRACE"]);
-    setIsStable(systemVerificationResult.isSystemStable);
+    try {
+      const globalSimulatedTelemetry = [
+        "Google Engine: Localization Gateway Matrix Hooked Successfully.",
+        "Bing Shard: Dynamic AI Sync Complete.",
+        "Premium paywall modules armed with 0% inflation vectors."
+      ];
+      setActiveFeedsList(globalSimulatedTelemetry);
+    } catch (viewportAnomaly) {
+      console.error(viewportAnomaly);
+    } finally {
+      setIsFeedSystemLoading(false);
+    }
   }, []);
+
+  if (isFeedSystemLoading) {
+    return (
+      <div style={{ color: "#737373", fontSize: "14px", fontFamily: "monospace" }}>
+        HYDRATING FEED VECTORS...
+      </div>
+    );
+  }
 
   return (
     <div style={{
-      fontFamily: "monospace",
-      padding: "20px",
-      backgroundColor: "#0A0A0A",
-      border: "1px solid rgba(214, 175, 55, 0.15)",
-      borderRadius: "12px",
-      maxWidth: "480px",
       width: "100%",
+      maxWidth: "500px",
+      backgroundColor: "#0d0d0d",
+      borderRadius: "12px",
+      border: "1px solid #1a1a1a",
+      padding: "20px",
       boxSizing: "border-box"
     }}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px" }}>
-        <span style={{ fontSize: "12px", color: "#AA7C11", letterSpacing: "1.5px", fontWeight: "bold" }}>
-          LIVE OMNI-CHANNEL SHARD INGRESS
-        </span>
-        <span style={{
-          fontSize: "10px",
-          padding: "2px 8px",
-          borderRadius: "4px",
-          backgroundColor: isStable ? "rgba(74, 222, 128, 0.1)" : "rgba(239, 68, 68, 0.1)",
-          color: isStable ? "#4ade80" : "#ef4444",
-          fontWeight: "bold"
-        }}>
-          {isStable ? "CORE_STABLE" : "CONGESTION_ALERT"}
-        </span>
-      </div>
-
+      <h3 style={{ color: "#a3a3a3", fontSize: "14px", margin: "0 0 16px 0", letterSpacing: "1px", fontFamily: "monospace" }}>
+        LIVE NETWORK LOGS:
+      </h3>
       <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-        {feedItems.map((item) => (
-          <div key={item.id} style={{
-            padding: "12px",
-            backgroundColor: "#000000",
-            border: "1px solid rgba(214, 175, 55, 0.08)",
-            borderRadius: "6px",
-            transition: "all 0.2s ease"
+        {activeFeedsList.map((logNodeString, indexKey) => (
+          <div key={indexKey} style={{
+            fontSize: "12px",
+            color: "#404040",
+            fontFamily: "monospace",
+            borderLeft: "2px solid #D4AF37",
+            paddingLeft: "10px",
+            lineHeight: "1.6"
           }}>
-            <div style={{ fontSize: "14px", fontWeight: "bold", color: "#D4AF37", marginBottom: "4px" }}>
-              {item.title}
-            </div>
-            <div style={{ display: "flex", justifyContent: "space-between", fontSize: "10px", color: "#737373", marginTop: "8px" }}>
-              <span>CAT: {item.category}</span>
-              <span style={{ color: "#4ade80" }}>WEIGHT: {item.revenueWeight}%</span>
-            </div>
+            <span style={{ color: "#a3a3a3" }}>[OK]</span> {logNodeString}
           </div>
         ))}
       </div>

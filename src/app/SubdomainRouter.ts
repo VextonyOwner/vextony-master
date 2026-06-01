@@ -52,7 +52,7 @@ export class SubdomainRouterCore {
       
       // 2. Multi-Tenant Edge Rewrite: Route traffic internally to specific language folders based on 17 platform demands
       // This maps the exact static layout folders where items are already stocked securely
-      const structuralRewritePath = `/src/app/_localized_shards/${resolvedChannel.toLowerCase()}/${subdomainPrefixShard}${cleanPathName}`;
+      const structuralRewritePath = `/_localized_shards/${resolvedChannel.toLowerCase()}/${subdomainPrefixShard}${cleanPathName}`;
 
       return {
         isSubdomainDetected: true,

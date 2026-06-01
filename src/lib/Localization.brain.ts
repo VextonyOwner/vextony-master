@@ -3,7 +3,7 @@
  * [STATUS: OMNIPOTENT ULTRA-MAX PRODUCTION LIVE] | [PRIVILEGE: OMNI-CHANNEL TRAFFIC INGRESS ENFORCER]
  * [INTEGRATION TARGETS: 7 SEARCH ENGINES, 5 PREMIUM PAYWALLS, 5 NEXT-GEN AI ENGINES]
  * [ARCHITECTURE RATING: ZERO-OVERLOAD STRICT VECTOR MATRIX INJECTED BY COMMANDER ASIF]
- * [ARCHITECTURE STANDARD: SUPREME ARCHITECT / GLOBAL OVERRIDE v107 - PURE ENGLISH CORE]
+ * [ARCHITECTURE STANDARD: SUPREME ARCHITECT / GLOBAL OVERRIDE v108 - PURE ENGLISH CORE]
  */
 
 export interface IPlatformRoutingDirective {
@@ -28,9 +28,11 @@ export class LocalizationBrainEngine {
   
   // High-performance strict structural registries protecting invariant data payloads natively
   private platformRegistryMatrix: Map<string, IPlatformRoutingDirective> = new Map();
+  private omniChannel70PercentLinguisticCache: Map<string, Record<string, string>> = new Map();
 
   private constructor() {
     this.seedStrict17PlatformDirectives();
+    this.seedLinguisticContextualAnchors();
   }
 
   public static getInstance(): LocalizationBrainEngine {
@@ -68,6 +70,11 @@ export class LocalizationBrainEngine {
     this.platformRegistryMatrix.set("meta",       { targetChannel: "NEXT_GEN_AI",     allowedContentType: "FREE_ARTICLE", supportedLanguagesCount: 30,  isStrictVerificationPassed: true });
   }
 
+  private seedLinguisticContextualAnchors(): void {
+    this.omniChannel70PercentLinguisticCache.set("en", { welcomeHeader: "VEXTONY MAINFRAME ONLINE", systemSubtext: "STANDARD GLOBAL ENGLISH CORE ACTIVATED" });
+    this.omniChannel70PercentLinguisticCache.set("bn", { welcomeHeader: "VEXTONY MAINFRAME ONLINE", systemSubtext: "AUTONOMOUS BENGALI SUBDOMAIN ACTIVE" });
+  }
+
   /**
    * Advanced Strict Interceptor: Resolves, cross-matches and filters routing passes for all 17 host vectors natively
    * Automatically process whatever volume of parameters exist at execution runtime dynamically
@@ -95,7 +102,7 @@ export class LocalizationBrainEngine {
     else if (cleanReferrer.includes("openai.com")) activePlatformKey = "openai";
     else if (cleanReferrer.includes("claude.ai") || cleanReferrer.includes("anthropic.com")) activePlatformKey = "claude";
     else if (cleanReferrer.includes("perplexity.ai")) activePlatformKey = "perplexity";
-    else if (cleanReferrer.includes("://google.com") || cleanReferrer.includes("gemini.com")) activePlatformKey = "gemini";
+    else if (cleanReferrer.includes("gemini.com") || cleanReferrer.includes("://google.com")) activePlatformKey = "gemini";
     else if (cleanReferrer.includes("meta.ai")) activePlatformKey = "meta";
 
     // Extract pre-seeded directive layout matching identified token node
@@ -120,7 +127,19 @@ export class LocalizationBrainEngine {
       timestamp: new Date().toISOString()
     };
   }
-}
 
-// Invariant Next.js Server-Side Rendering (SSR) Shield Layer Guard
-export const GlobalLocalizationBrain = LocalizationBrainEngine.getInstance();
+  /**
+   * Inject custom language pack vector mapping arrays under strict 60-layer human constitution laws
+   * @param customLocalePrefix - Target culture country prefix registry identifier
+   * @param customPayloadDictionary - High-power key-value elite translations mapping records
+   */
+  public injectInfiniteCustomLanguagePack(customLocalePrefix: string, customPayloadDictionary: Record<string, string>): boolean {
+    if (!customLocalePrefix || !customPayloadDictionary || customLocalePrefix.trim().length === 0 || !this.activeLinguisticSystemArmed) {
+      return false;
+    }
+    try {
+      const secureKey = customLocalePrefix.trim().toLowerCase();
+      this.omniChannel70PercentLinguisticCache.set(secureKey, customPayloadDictionary);
+      return true;
+    } catch (matrixAnomaly) {
+      return false;

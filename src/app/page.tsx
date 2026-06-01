@@ -3,11 +3,12 @@
 /**
  * VEXTONY CORE INFRASTRUCTURE: SOVEREIGN ROOT VIEW PORT CONTROLLER
  * [STATUS: OMNIPOTENT ULTRA-MAX PRODUCTION LIVE] | [PRIVILEGE: PRIMARY HOMEPAGE MAIN INTERFACE]
+ * [ARCHITECTURE STANDARD: NEXT.JS 14+ APP LAYER - CLEAN MODULE RE-ROUTING]
  */
 
 import React from "react";
-import DynamicFeed from "./DynamicFeed";
-import QuantumClock from "./QuantumClock";
+import DynamicFeed from "../components/DynamicFeed";
+import QuantumClock from "../components/QuantumClock";
 
 export default function SovereignHomePage() {
   return (
@@ -31,7 +32,7 @@ export default function SovereignHomePage() {
         </p>
       </div>
 
-      {/* Synchronized Core Visual Modules */}
+      {/* Synchronized Core Visual Modules fetched natively from the components vault */}
       <QuantumClock />
       <DynamicFeed />
     </main>

@@ -16,7 +16,7 @@ export class QuantumResistantEncryption {
   private static encryptionInstance: QuantumResistantEncryption;
   private readonly encryptionLinearKey: string = "vxt_quantum_linear_asif_encryption_2026";
   private isCryptoModuleOnline: boolean = true;
-  private readonly saltVectorArray: number[] = [101, 103, 107, 109, 113]; // Sovereign key expansion primitives
+  private readonly saltVectorArray: number[] =; // Sovereign key expansion primitives
 
   private constructor() {}
 

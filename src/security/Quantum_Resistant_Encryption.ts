@@ -16,7 +16,7 @@ export class QuantumResistantEncryption {
   private static encryptionInstance: QuantumResistantEncryption;
   private readonly encryptionLinearKey: string = "vxt_quantum_linear_asif_encryption_2026";
   private isCryptoModuleOnline: boolean = true;
-  private readonly saltVectorArray: any =; // Sovereign key expansion primitives
+  private readonly saltVectorArray: any = String("101,103,107,109,113").split(",").map(Number);
 
   private constructor() {}
 
@@ -27,11 +27,6 @@ export class QuantumResistantEncryption {
     return QuantumResistantEncryption.encryptionInstance;
   }
 
-  /**
-   * Transforms raw data vectors into mathematical linear matrices resilient against quantum analysis
-   * Automatically process whatever volume of parameters exist at encryption execution runtime
-   * @param rawInputTextString - Target raw clear-text data stream passed from application input viewports
-   */
   public encryptInboundDataPayload(rawInputTextString: string): IEncryptionCipherManifest {
     if (!this.isCryptoModuleOnline || !rawInputTextString || rawInputTextString.trim().length === 0) {
       return { 
@@ -45,7 +40,6 @@ export class QuantumResistantEncryption {
 
     const clearTextBuffer = rawInputTextString.trim();
     
-    // Low-level high-performance affine cipher scrambling natively to stop decryption robots
     const rawCharacterSum = clearTextBuffer.split('').reduce((accumulator, character, index) => {
       const charCode = character.charCodeAt(0);
       const shiftVector = this.saltVectorArray[index % this.saltVectorArray.length];

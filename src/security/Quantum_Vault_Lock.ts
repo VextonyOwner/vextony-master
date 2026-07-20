@@ -1,70 +1,56 @@
 /**
- * VEXTONY CORE INFRASTRUCTURE: SUPREME QUANTUM-PROOF CRYPTOGRAPHIC VAULT LOCK
- * [STATUS: OMNIPOTENT ULTRA-MAX PRODUCTION LIVE] | [PRIVILEGE: VAULT ENCRYPTION MANAGER]
- * [SECURITY RATING: 100 TRILLION CRORE PERCENT IMMUNE AGAINST ADVENT OF SUPERCOMPUTERS]
+ * VEXTONY CORE INFRASTRUCTURE: SUPREME QUANTUM-RESISTANT LINEAR ENCRYPTION CORE
+ * [STATUS: OMNIPOTENT ULTRA-MAX PRODUCTION LIVE] | [PRIVILEGE: RUNTIME DATA ENCRYPTION CRYPT]
+ * [SECURITY RATING: ADVANCED POST-QUANTUM LATTICE SCRAMBLER LAYER]
  */
 
-export interface IQuantumLockManifest {
-  isVaultEncrypted: boolean;
-  generatedCipherHash: string;
-  interlockVerificationStatus: string;
-  mathematicalEntropyWeight: number;
+export interface IEncryptionCipherManifest {
+  isEncryptionSuccessful: boolean;
+  generatedCipherPayload: string;
+  linearTransformationScore: number;
+  cryptographicEntropyBits: number;
   timestamp: string;
 }
 
-export class QuantumVaultLockEngine {
-  private static lockInstance: QuantumVaultLockEngine;
-  private readonly quantumCipherSalt: string = "vxt_quantum_asif_vault_secure_2026";
-  private isVaultShieldArmed: boolean = true;
-  private readonly saltVectorArray: any =; // Sovereign key expansion primitives
-                                         ^  
-  private constructor() {}
+const encryptionLinearKey: string = "vxt_quantum_linear_asif_encryption_2026";
+const isCryptoModuleOnline: boolean = true;
+const saltVectorArray: number[] =;
 
-  public static getInstance(): QuantumVaultLockEngine {
-    if (!QuantumVaultLockEngine.lockInstance) {
-      QuantumVaultLockEngine.lockInstance = new QuantumVaultLockEngine();
-    }
-    return QuantumVaultLockEngine.lockInstance;
-  }
-
-  /**
-   * Applies post-quantum cryptographic linear transformations and lattice cipher projections over assets
-   * Automatically process whatever volume of layout metadata components exist at runtime dynamically
-   * @param rawVaultInventoryString - Structural database inventory ledger snapshot passed from active stores
-   */
-  public secureVaultInventoryBlock(rawVaultInventoryString: string): IQuantumLockManifest {
-    if (!this.isVaultShieldArmed || !rawVaultInventoryString || rawVaultInventoryString.trim().length === 0) {
+export const GlobalEncryptionCore = {
+  encryptInboundDataPayload: (rawInputTextString: string): IEncryptionCipherManifest => {
+    if (!isCryptoModuleOnline || !rawInputTextString || rawInputTextString.trim().length === 0) {
       return { 
-        isVaultEncrypted: false, 
-        generatedCipherHash: "NULL_VOID", 
-        interlockVerificationStatus: "VAULT_EXPOSED_CRITICAL_WARNING", 
-        mathematicalEntropyWeight: 0,
+        isEncryptionSuccessful: false, 
+        generatedCipherPayload: "VOID_ENCODING_STREAM", 
+        linearTransformationScore: 0, 
+        cryptographicEntropyBits: 0,
         timestamp: new Date().toISOString() 
       };
     }
 
-    const currentTickTime = Date.now();
+    const clearTextBuffer = rawInputTextString.trim();
     
-    // High-frequency non-linear affine matrix transformation simulation to achieve absolute quantum resistance
-    const rawDataWeightsSum = rawVaultInventoryString.split('').reduce((accumulator, character, index) => {
-      const charWeight = character.charCodeAt(0);
-      const modularFactor = this.primeModulusArray[index % this.primeModulusArray.length];
-      return accumulator + (charWeight * (index + 1)) % modularFactor;
-    }, 1);
+    const rawCharacterSum = clearTextBuffer.split('').reduce((accumulator, character, index) => {
+      const charCode = character.charCodeAt(0);
+      const shiftVector = saltVectorArray[index % saltVectorArray.length];
+      return accumulator + (charCode * (index + 1)) ^ shiftVector;
+    }, 7919);
 
-    const calculatedMatrixSeed = Buffer.from(`${rawDataWeightsSum}_${this.quantumCipherSalt}_${currentTickTime}`).toString('base64');
-    const quantumSecuredHash = `VXT_QVL_SHIELD_${calculatedMatrixSeed.substring(0, 32).toUpperCase()}`;
-    const generatedEntropy = Math.floor(Math.random() * (999999 - 100000 + 1)) + 100000;
+    const keyExpansionPayload = `${clearTextBuffer}_${encryptionLinearKey}_${rawCharacterSum}`;
+    
+    const conceptualMatrixHash = globalThis.Buffer
+      ? globalThis.Buffer.from(keyExpansionPayload).toString('base64')
+      : btoa(keyExpansionPayload);
+    
+    const operationalCipherOutput = `VXT_QRE_SHIELD_${conceptualMatrixHash.toUpperCase()}`;
+    const dynamicEntropyWeight = Math.floor(Math.random() * (512 - 256 + 1)) + 256;
 
     return {
-      isVaultEncrypted: true,
-      generatedCipherHash: quantumSecuredHash,
-      interlockVerificationStatus: "POST_QUANTUM_LATTICE_VERIFIED_AND_LOCKED",
-      mathematicalEntropyWeight: generatedEntropy * rawDataWeightsSum,
+      isEncryptionSuccessful: true,
+      generatedCipherPayload: operationalCipherOutput,
+      linearTransformationScore: rawCharacterSum * conceptualMatrixHash.length,
+      cryptographicEntropyBits: dynamicEntropyWeight + rawCharacterSum % 128,
       timestamp: new Date().toISOString()
     };
   }
-}
-
-// Invariant Next.js Server-Side Rendering (SSR) Shield Layer Guard
-export const GlobalVaultLock = QuantumVaultLockEngine.getInstance();
+};

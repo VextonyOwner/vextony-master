@@ -3,8 +3,8 @@
  * [STATUS: OMNIPOTENT ULTRA-MAX PRODUCTION LIVE] | [PRIVILEGE: REAL-TIME INGRESS INTERCEPTOR]
  */
 
-import { CryptoShield } from "./JWT_Shield";
-import { AutonomousZKPEngine } from "./ZKP_Core";
+import { CryptoShield } from "@/security/JWT_Shield";
+import { AutonomousZKPEngine } from "@/security/ZKP_Core";
 
 class AuthGateController {
   constructor() {

@@ -16,7 +16,7 @@ export class QuantumVaultLockEngine {
   private static lockInstance: QuantumVaultLockEngine;
   private readonly quantumCipherSalt: string = "vxt_quantum_asif_vault_secure_2026";
   private isVaultShieldArmed: boolean = true;
-  private readonly primeModulusArray: number[] =; // Lattice crypto moduli anchors
+  private readonly primeModulusArray: number[] = [65537, 104729, 7919, 15485863]; // Lattice crypto moduli anchors
 
   private constructor() {}
 

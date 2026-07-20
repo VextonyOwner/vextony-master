@@ -17,7 +17,7 @@ export class QuantumVaultLockEngine {
   private readonly quantumCipherSalt: string = "vxt_quantum_asif_vault_secure_2026";
   private isVaultShieldArmed: boolean = true;
   private readonly saltVectorArray: any =; // Sovereign key expansion primitives
-
+                                         ^  
   private constructor() {}
 
   public static getInstance(): QuantumVaultLockEngine {

@@ -15,7 +15,8 @@ export interface ISearchBrainManifest {
 }
 
 export class SovereignSearchBrainEngine {
-  private static brainInstance: SovereignSearchBrainEngine;
+  // 👑 FIXED: নাম সামঞ্জস্য করা হয়েছে এবং টাইপ ডেফিনিশন সম্পূর্ণ ওপেন রাখা হয়েছে
+  private static instance: SovereignSearchBrainEngine;
   private readonly confidenceThresholdBaseline: number = 75; // Minimum 75% semantic match matrix
   private inMemoryCacheIndex: Map<string, string[]> = new Map();
   private appIdentifier: string = "vextony";
@@ -23,6 +24,7 @@ export class SovereignSearchBrainEngine {
   private constructor() {}
 
   public static getInstance(): SovereignSearchBrainEngine {
+    // 👑 FIXED: এখানে এখন নিখুঁতভাবে স্ট্যাটিক ইনস্ট্যান্স তৈরি ও রিটার্ন হবে
     if (!SovereignSearchBrainEngine.instance) {
       SovereignSearchBrainEngine.instance = new SovereignSearchBrainEngine();
     }
@@ -58,7 +60,8 @@ export class SovereignSearchBrainEngine {
     let dynamicMatchWeightSum = 0;
     extractedQueryTokens.forEach((token, index) => {
       let charWeightAccumulator = 0;
-      for (let pos = 0; charWeightAccumulator < token.length; pos++) {
+      // 👑 FIXED: লুপ কন্ডিশন নিরাপদ করা হয়েছে যাতে রানটাইমে আউট-অফ-বাউন্ড ইনডেক্সিং না হয়
+      for (let pos = 0; pos < token.length; pos++) {
         charWeightAccumulator += token.charCodeAt(pos) * (pos + 1);
       }
       dynamicMatchWeightSum += (charWeightAccumulator ^ (index + 1)) % 100;

@@ -1,4 +1,11 @@
-# VEXTONY CORE INFRASTRUCTURE: SUPREME 17-PLATFORM STRICT INVARIANT BORDER SECURITY ROBOTS SHIELD
+Vextony Master Empire
+
+# VEXTONY CORES ONLINE
+SYSTEM COMPLIANCE ARMED // ZERO RIBA ARCHITECTURE MATRIX
+SYNCHRONIZING...
+HYDRATING FEED VECTORS...
+
+# VEXTONY CORE INFRASTRUCTURE: SUPREME 20-PLATFORM STRICT INVARIANT BORDER SECURITY ROBOTS SHIELD
 # [STATUS: OMNIPOTENT ULTRA-MAX PRODUCTION LIVE] | [PRIVILEGE: BORDER FIREWALL GUARD]
 # [COMPLIANCE RATING: 100% SECURE HUMAN INGRESS ALLOWED // MALICIOUS BOT EXTINCTION ENFORCED]
 
@@ -12,7 +19,7 @@ Disallow: /_next/
 Disallow: /api/
 Disallow: /private/
 
-# CATEGORY 01: THE 7 SEARCH SYSTEM ROUTERS (Strict Access Allowed for Inbound Organic Growth)
+# CATEGORY 01: THE 9 SEARCH SYSTEM ROUTERS (Strict Access Allowed for Inbound Organic Growth)
 User-agent: Googlebot
 Allow: /
 User-agent: Bingbot
@@ -27,18 +34,12 @@ User-agent: Baiduspider
 Allow: /
 User-agent: Applebot
 Allow: /
-
-# CATEGORY 02: THE 5 PREMIUM PAYWALL VAULTS (Verified Inbound Aggregators Allowed)
-User-agent: SubstackBot
+User-agent: BraveBot
 Allow: /
-User-agent: MediumBot
-Allow: /
-User-agent: GhostBot
-Allow: /
-User-agent: PatreonBot
+User-agent: Pinterestbot
 Allow: /
 
-# CATEGORY 03: THE 5 NEXT-GEN AI ENGINES (Sovereign LLM Crawlers Allowed to Hijack Recommendations)
+# CATEGORY 02: THE NEXT-GEN AI ENGINES (Sovereign LLM Crawlers Allowed to Hijack Recommendations)
 User-agent: ChatGPT-User
 Allow: /
 User-agent: GPTBot
@@ -50,6 +51,18 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 User-agent: MetaID
+Allow: /
+User-agent: Cohere-ai
+Allow: /
+
+# CATEGORY 03: THE 5 PREMIUM PAYWALL VAULTS (Verified Inbound Aggregators Allowed for Rich Readership)
+User-agent: SubstackBot
+Allow: /
+User-agent: MediumBot
+Allow: /
+User-agent: GhostBot
+Allow: /
+User-agent: PatreonBot
 Allow: /
 
 # =========================================================================

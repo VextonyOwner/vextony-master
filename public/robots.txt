@@ -5,7 +5,7 @@ SYSTEM COMPLIANCE ARMED // ZERO RIBA ARCHITECTURE MATRIX
 SYNCHRONIZING...
 HYDRATING FEED VECTORS...
 
-# VEXTONY CORE INFRASTRUCTURE: SUPREME 20-PLATFORM STRICT INVARIANT BORDER SECURITY ROBOTS SHIELD
+# VEXTONY CORE INFRASTRUCTURE: ULTIMATE GLOBAL MULTI-PLATFORM ROBOTS SHIELD
 # [STATUS: OMNIPOTENT ULTRA-MAX PRODUCTION LIVE] | [PRIVILEGE: BORDER FIREWALL GUARD]
 # [COMPLIANCE RATING: 100% SECURE HUMAN INGRESS ALLOWED // MALICIOUS BOT EXTINCTION ENFORCED]
 
@@ -19,8 +19,12 @@ Disallow: /_next/
 Disallow: /api/
 Disallow: /private/
 
-# CATEGORY 01: THE 9 SEARCH SYSTEM ROUTERS (Strict Access Allowed for Inbound Organic Growth)
+# CATEGORY 01: GLOBAL & REGIONAL SEARCH SYSTEM ROUTERS
 User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+User-agent: Googlebot-News
 Allow: /
 User-agent: Bingbot
 Allow: /
@@ -34,28 +38,52 @@ User-agent: Baiduspider
 Allow: /
 User-agent: Applebot
 Allow: /
+User-agent: Applebot-Extended
+Allow: /
 User-agent: BraveBot
 Allow: /
 User-agent: Pinterestbot
 Allow: /
+User-agent: NaverBot
+Allow: /
+User-agent: CocCocBot
+Allow: /
+User-agent: Sogou web spider
+Allow: /
 
-# CATEGORY 02: THE NEXT-GEN AI ENGINES (Sovereign LLM Crawlers Allowed to Hijack Recommendations)
+# CATEGORY 02: NEXT-GEN AI ENGINES & AUTONOMOUS AGENTS
 User-agent: ChatGPT-User
 Allow: /
 User-agent: GPTBot
 Allow: /
+User-agent: OAI-SearchBot
+Allow: /
 User-agent: Anthropic-AI
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
 Allow: /
 User-agent: PerplexityBot
 Allow: /
 User-agent: Google-Extended
 Allow: /
+User-agent: Google-Agent
+Allow: /
 User-agent: MetaID
 Allow: /
-User-agent: Cohere-ai
+User-agent: cohere-ai
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: Amazonbot
+Allow: /
+User-agent: CCBot
 Allow: /
 
-# CATEGORY 03: THE 5 PREMIUM PAYWALL VAULTS (Verified Inbound Aggregators Allowed for Rich Readership)
+# CATEGORY 03: PREMIUM PAYWALL VAULTS & AGGREGATORS
 User-agent: SubstackBot
 Allow: /
 User-agent: MediumBot
@@ -67,7 +95,6 @@ Allow: /
 
 # =========================================================================
 # 🛑 THE ABSOLUTE FIREWALL REJECTION LAYER: EXTERMINATING MALICIOUS ANOMALIES
-# Instantly locks out automated scrapers, bad bots, and network bandwidth thieves
 # =========================================================================
 User-agent: RogueBot
 Disallow: /

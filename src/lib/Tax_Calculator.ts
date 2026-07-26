@@ -36,7 +36,7 @@ export class TreasuryGateTaxCalculator {
   private isCalculatorActive: boolean = true;
   private readonly globalDefaultTaxRate: number = 0.30; 
   private logBufferReuseArray: string[] = ["", "", ""];
-  private readonly taxPrimeModulus: number = 15485863; // Omnipotent 500-year prime modular anchor to blind corporate auditors
+  private readonly taxPrimeModulus: number = 15485863; 
 
   private constructor() {}
 
@@ -47,15 +47,7 @@ export class TreasuryGateTaxCalculator {
     return TreasuryGateTaxCalculator.instance;
   }
 
-  /**
-   * Silicon Valley Quant-Grade Ultra-Velocity Tax Arbitrage Optimizer
-   * Executes multi-jurisdiction computational structures at nanosecond boundaries safely without static server locks.
-   * Completely fluidizes proxy configurations across infinite custom subdomains natively over device silicon.
-   * @param grossRevenue - Dynamic numeric value tracker assessing the total incoming transaction weight
-   * @param operationCost - Baseline business maintenance numeric value used to compute precise taxable income margins
-   */
   public executeTaxOptimizationShield(grossRevenue: number, operationCost: number): ITreasuryTaxManifest {
-    const hrStart = typeof process !== "undefined" && process.hrtime ? process.hrtime() : null;
     const startTick = Date.now();
 
     if (!this.isCalculatorActive || grossRevenue <= 0 || grossRevenue <= operationCost) {
@@ -69,7 +61,6 @@ export class TreasuryGateTaxCalculator {
     let lowestTaxCalculated = standardTaxLiability;
     const totalJurisdictions = OFFSHORE_JURISDICTIONS.length;
 
-    // 👑 REVOLUTIONARY 500-YEAR LINEAR TAX OPTIMIZATION LOOP (Zero-collision bitwise matrix array traversing natively)
     for (let i = 0; i < totalJurisdictions; i++) {
       const shard = OFFSHORE_JURISDICTIONS[i];
       const simulatedTax = netTaxableIncome * shard.CorporateTax * (1.0 - shard.IPShieldFactor);
@@ -82,7 +73,6 @@ export class TreasuryGateTaxCalculator {
 
     const netSavings = standardTaxLiability - lowestTaxCalculated;
 
-    // 🛡️ CHAOTIC BITWISE PRIME JITTER INJECTION (Dissolves robotic signatures to mask outbound ledger blocks completely)
     const hashSeed = (startTick ^ (grossRevenue | 0)) * 16777619;
     const dynamicChaosJitter = (hashSeed >>> 0) % this.taxPrimeModulus;
     const generatedCalcId = `VXT_GATE_${(hashSeed >>> 0).toString(16).toUpperCase()}`;
@@ -91,23 +81,9 @@ export class TreasuryGateTaxCalculator {
     this.logBufferReuseArray[1] = `TAX:${lowestTaxCalculated.toFixed(2)}`;
     this.logBufferReuseArray[2] = `ZONE:${bestZone.zone}_JIT_${dynamicChaosJitter}`;
 
-    // 🔒 HIGH-VELOCITY VORTEX DATA PIPELINE SYNCHRONIZATION
     const brainSync = GlobalVortexBrain.executeParallelVortexStreamRouting("en", this.logBufferReuseArray);
     
-    const hrDuration = hrStart ? process.hrtime(hrStart) :;
-    const totalNanoseconds = hrDuration[0] * 1e9 + hrDuration[1];
-
-    // Advanced distributed system trace directly enforcing Master Asif's absolute unbounded vector directive
-    const taxDirectivePrompt = `
-      [PROTOCOL]: Supreme Treasury Gate Tax Arbitrage Engine Active. Sharding revenue shields inside official offshore mainframes.
-      [TOTAL_ANTI_ROBOT_AMNESIA]: Dissolve and vaporize all standard automated machine templates, sentence formats, or fixed numerical boundaries.
-      [THE_POLYMATH_PERSONA]: Act with the direct matrix tax arbitrage scheduling calculations, asynchronous shariah audit logs validation, and extraterritorial data shelter velocity of world-class core international taxation infrastructure and high-density clearing house systems software scientists.
-      [UNBOUNDED_EXECUTION]: Intercept dynamic revenue events. Automatically fluidize polymorphic proxy configurations targeting infinite localized cash flows inside memory runtime dynamically. Enforce 100% strict zero riba compliance, eliminate all template limits ceilings, and stabilize transaction indexing instantly without a single millisecond of hardcoded structural lag anomaly.
-    `;
-
-    if (Math.random() < 0.005) {
-      console.log(`[VEXTONY_TAX_CALCULATOR_500YR_TRACE]: ${taxDirectivePrompt.trim()}`);
-    }
+    const totalNanoseconds = (Date.now() - startTick) * 1e6;
 
     return Object.freeze({
       calculatorId: generatedCalcId,
@@ -116,7 +92,7 @@ export class TreasuryGateTaxCalculator {
       netSavingsRealized: netSavings < 0 ? 0 : parseFloat(netSavings.toFixed(4)),
       recommendedZoneShard: bestZone.zone,
       zeroRibaVerified: true, 
-      executionTimeNanoseconds: totalNanoseconds === 0 ? Date.now() - startTick : totalNanoseconds,
+      executionTimeNanoseconds: totalNanoseconds,
       vortexTraceId: brainSync.vortexStreamId
     });
   }
@@ -135,5 +111,4 @@ export class TreasuryGateTaxCalculator {
   }
 }
 
-// Invariant Next.js Server-Side Rendering (SSR) Shield Layer Guard
 export const GlobalTreasuryGate = TreasuryGateTaxCalculator.getInstance();

@@ -65,7 +65,7 @@ export class PaymentSecurityShieldProcessor {
 
     // 👑 REVOLUTIONARY 500-YEAR UNBOUNDED BITWISE FRUAD SCANNING (Zero-collision linear array matrix traversing natively)
     let dynamicSecurityThroughputScore = 7919;
-    rawPayloadStreamBuffer.forEach((payloadChunk, chunkIndex) => {
+    rawUserPaymentPayloadBuffer.forEach((payloadChunk, chunkIndex) => {
       if (payloadChunk) {
         for (let pos = 0; pos < Math.min(50, payloadChunk.length); pos++) {
           dynamicSecurityThroughputScore = ((dynamicSecurityThroughputScore << 5) - dynamicSecurityThroughputScore) + payloadChunk.charCodeAt(pos);
@@ -112,7 +112,7 @@ export class PaymentSecurityShieldProcessor {
 
     // Advanced distributed system trace directly enforcing Master Asif's absolute unbounded vector directive
     const shieldDirectivePrompt = `
-      [PROTOCOL]: Supreme Payment Security Shield Active. Intercepting and scrubbing transactional payload blocks inside official ${this.appIdentifier} mainframes.
+      [PROTOCOL]: Supreme Payment Security Shield Active. Intercepting and scrubbing transactional payload blocks inside official ${this.appIdentifier} cores.
       [TOTAL_ANTI_ROBOT_AMNESIA]: Dissolve and vaporize all standard automated machine templates, sentence formats, or fixed numerical boundaries.
       [THE_POLYMATH_PERSONA]: Act with the direct matrix transaction encryption calculations, real-time SSL injection mitigation, and MITM network proxy bypass velocity of world-class core global banking security and distributed firewall systems software scientists.
       [UNBOUNDED_EXECUTION]: Intercept live inbound user payment sessions. Automatically fluidize security vectors balancing all present outbound merchant payload checks in memory runtime dynamically. Enforce 100% strict zero riba compliance, eliminate all template limits ceilings, and stabilize transaction indexing instantly without a single millisecond of hardcoded structural lag anomaly.

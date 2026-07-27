@@ -294,7 +294,7 @@ export const AI_AGENTS_INVENTORY: AIAgentProduct[] = [
     { id: "AG-199", agentName: "Asymmetric Memory Mapping Realignment Optimizer", task: "Calibrates memory block allocations for sharded database pools running on bare-metal multi-tenant host nodes", apiEndpoint: "/api/agents/v1/kernel/mapping-optimizer", category: "Low-Level Kernel Shunting" },
     { id: "AG-200", agentName: "The Ultimate Kernel Sovereignty Operating Module", task: "Hardcodes secure cryptographic isolation boundaries directly inside system roots to achieve absolute platform autonomy", apiEndpoint: "/api/agents/v1/kernel/ultimate-module", category: "Low-Level Kernel Shunting" },
 
-      // =========================================================================
+    // =========================================================================
     // CLUSTER 21: [201-210: CATEGORY Quantum Neural Cryptography]
     // =========================================================================
     { id: "AG-201", agentName: "Lattice-Based Geometry Encryption Module", task: "Fortifies core database transactional matrices against future post-quantum Shor factorization loops securely", apiEndpoint: "/api/agents/v1/quantum/lattice-fortress", category: "Quantum Neural Cryptography" },

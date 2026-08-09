@@ -1,7 +1,6 @@
 // @ts-nocheck
 /**
  * VEXTONY ROYAL VAULT - 1% ELITE TRUTH (PREMIUM KNOWLEDGE) (1-600)
- * [DNA: 57-CATEGORY CLUSTERING | SUPREME ARCHITECT v1.0]
  */
 
 export interface Pillar {

@@ -4,7 +4,7 @@
  * [COMPLIANCE: NEXT.JS 14+ EDGE RUNTIME STACK • TAURI V2 & CAPACITOR V6 HARDWARE BRIDGED]
  * DEVICE TARGETS: WINDOWS NT (WIN32/X64), MACOS (POSIX DARWIN), IOS (WEBKIT/NATIVE), ANDROID (LINUX KERNEL)
  * SECURITY STATUS: 100% UNBOUNDED IDENTITY PIPELINE • ANTI-FRAUD SESSION LOCKUP FIREWALL
- * ARCHITECT CODE RANK: SUPREME AI KING SYSTEM INVARIANT IDENTITY SHIELD • ABSOLUTE ERROR PURGED [1.1]
+ * ARCHITECT CODE RANK: SUPREME AI KING SYSTEM INVARIANT IDENTITY SHIELD • TOTAL INVARIANT FIXED [1.1]
  */
 
 export interface IdentityShieldPayload {
@@ -104,6 +104,12 @@ export class UltimateUniversalDigitalIdentityShield {
     // RULE 02: Intercept session fingerprint tampering delta. Bots present static or zero length hardware hash formats.
     if (metadata.hardwareFingerprintHash.length  15000) {
       identityThreatAccumulator += 0.5500;
+      isSpoofingDetected = true;
+    }
+
+    // RULE 04: Monitor user latency jitter tracking anomalies ( প্রোগ্রামেটিক প্রক্সি রোটেশন ট্র্যাপ ডিটেকশন ) [1.1]
+    if (metadata.networkIngressJitterMs < 0 || metadata.networkIngressJitterMs > 15000) {
+      identityThreatAccumulator += 0.4500;
       isSpoofingDetected = true;
     }
 

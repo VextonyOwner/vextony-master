@@ -4,7 +4,7 @@
  * [COMPLIANCE: NEXT.JS 14+ EDGE RUNTIME STACK • TAURI V2 & CAPACITOR V6 HARDWARE BRIDGED]
  * DEVICE TARGETS: WINDOWS NT (WIN32/X64), MACOS (POSIX DARWIN), IOS (WEBKIT/NATIVE), ANDROID (LINUX KERNEL)
  * SECURITY STATUS: 100% UNBOUNDED IDENTITY PIPELINE • ANTI-FRAUD SESSION LOCKUP FIREWALL
- * ARCHITECT CODE RANK: SUPREME AI KING SYSTEM INVARIANT IDENTITY SHIELD • ZERO OVERHEAD [1.1]
+ * ARCHITECT CODE RANK: SUPREME AI KING SYSTEM INVARIANT IDENTITY SHIELD • RESOLVED SYNTAX ERROR [1.1]
  */
 
 export interface IdentityShieldPayload {
@@ -59,7 +59,6 @@ export class UltimateUniversalDigitalIdentityShield {
    * 📂 DECENTRALIZED THREAT INFRASTRUCTURE HYDRATION OVERLORD
    * Pipes compromised session or spoofed hardware identity tokens straight into V8 memory slots dynamically [1.1].
    * Ensures absolute system compliance completely separated from hardcoded parameter files [1.1].
-   * @param compromisedIdentityHash - Blacklisted client token string to block instantly at routing gates [1.1].
    */
   public hydrateCompromisedIdentityRegistry(compromisedIdentityHash: string): void {
     if (!compromisedIdentityHash) return;

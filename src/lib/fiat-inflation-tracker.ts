@@ -4,12 +4,12 @@
  * [COMPLIANCE: NEXT.JS 14+ EDGE RUNTIME STACK • TAURI V2 & CAPACITOR V6 HARDWARE BRIDGED]
  * DEVICE TARGETS: WINDOWS NT (WIN32/X64), MACOS (POSIX DARWIN), IOS (WEBKIT/NATIVE), ANDROID (LINUX KERNEL)
  * SECURITY STATUS: 100% UNBOUNDED FINANCIAL PIPELINE • INVARIANT PURCHASING POWER ORACLE
- * ARCHITECT CODE RANK: SUPREME AI KING COMPREHENSIVE SHARD • INTERNAL SYSTEM SECURITY FRAME [1.1]
+ * ARCHITECT CODE RANK: SUPREME AI KING COMPREHENSIVE SHARD • INTERNAL SYSTEM SECURITY FRAME
  */
 
 export interface InflationTrackerPayload {
   rawMetricsStreamBytes: string;
-  sourceInboundLocaleToken: string; // ➔ 100% Unbounded language/subdomain identifier token [1.1]
+  sourceInboundLocaleToken: string; // ➔ 100% Unbounded language/subdomain identifier token
   liveExchangeRateDelta: number;
   clientRequestTimestamp: number;
   clientHardwareArchitecture: "WINDOWS_NT" | "DARWIN_MACOS" | "IOS_WEBKIT" | "ANDROID_LINUX" | "UNKNOWN_HARDWARE_NODE";
@@ -31,12 +31,12 @@ export class UltimateUniversalFiatInflationTracker {
   private readonly fnvOffsetBasis: number = 2166136261;
   private readonly fnvPrimeMultiplier: number = 16777619;
 
-  // SILICON VALLEY HIDDEN FEATURE 01: High-Density Fixed-Size Low-Level Cyclic Array Buffer Pool [1.1]
+  // SILICON VALLEY HIDDEN FEATURE 01: High-Density Fixed-Size Low-Level Cyclic Array Buffer Pool
   private preAllocatedCacheRegistry: Uint32Array;
   private cyclicBufferPointer: number = 0;
   private readonly maxAllocationPoolSize: number = 512;
 
-  // 🌍 100% UNBOUNDED LINGUISTIC MAP REGISTER: Decentralized registry populated exclusively at runtime [1.1]
+  // 🌍 100% UNBOUNDED LINGUISTIC MAP REGISTER: Decentralized registry populated exclusively at runtime
   private centralInflationLattice: Map<string, string> = new Map();
 
   constructor() {
@@ -45,7 +45,7 @@ export class UltimateUniversalFiatInflationTracker {
   }
 
   /**
-   * SILICON VALLEY HIDDEN FEATURE 02: Hardware-Accelerated Multi-Core Register Priming [1.1]
+   * SILICON VALLEY HIDDEN FEATURE 02: Hardware-Accelerated Multi-Core Register Priming
    */
   private primeHardwareLatticeRegisters(): void {
     let trackingSeed = 0x1E9B2ED4;
@@ -57,7 +57,7 @@ export class UltimateUniversalFiatInflationTracker {
 
   /**
    * 📂 DECENTRALIZED COMPLIANCE DATA HYDRATION ENGINE
-   * Streams dynamic inflation indices cleanly into edge registers from distributed API channels [1.1].
+   * Streams dynamic inflation indices cleanly into edge registers from distributed API channels.
    */
   public hydrateDynamicInflationRegistry(unboundedLocaleKey: string, configurationSchema: string): void {
     if (!unboundedLocaleKey || !configurationSchema) return;
@@ -65,7 +65,7 @@ export class UltimateUniversalFiatInflationTracker {
   }
 
   /**
-   * SILICON VALLEY HIDDEN FEATURE 03: Constant-Time Bitwise Threat Signature Hash Engine [1.1]
+   * SILICON VALLEY HIDDEN FEATURE 03: Constant-Time Bitwise Threat Signature Hash Engine
    */
   private generateSecureExecutionJitter(tokenStream: string): number {
     let rollingHashBlock = this.fnvOffsetBasis;
@@ -78,8 +78,8 @@ export class UltimateUniversalFiatInflationTracker {
 
   /**
    * FEATURE 01: Multi-OS Hyper-Velocity Fiat Inflation & PPP Structure Normalizer
-   * Sanitizes cross-platform network metrics layout streams over serverless edge points safely [1.1].
-   * Strictly functions without main thread blockages across Microsoft Windows, Apple macOS/iOS, and Google Android [1.1].
+   * Sanitizes cross-platform network metrics layout streams over serverless edge points safely.
+   * Strictly functions without main thread blockages across Microsoft Windows, Apple macOS/iOS, and Google Android.
    */
   public compileSanitizedInflationData(dataset: InflationTrackerPayload): InflationResolutionEnvelope {
     const calculationTimerStart = performance.now();
@@ -91,7 +91,7 @@ export class UltimateUniversalFiatInflationTracker {
       return this.generateDefaultFallbackMetrics(calculationTimerStart);
     }
 
-    // High-density bitwise layout sanitizer mapping character tokens cleanly inside serverless frames [1.1]
+    // High-density bitwise layout sanitizer mapping character tokens cleanly inside serverless frames
     let sanitizedOutputBuffer = cleanPayload
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
@@ -99,30 +99,30 @@ export class UltimateUniversalFiatInflationTracker {
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#x27;");
 
-    // Increments buffer location trackers cleanly inside execution cycles [1.1]
+    // Increments buffer location trackers cleanly inside execution cycles
     this.cyclicBufferPointer = (this.cyclicBufferPointer + 1) % this.maxAllocationPoolSize;
     const registerJitterSeed = this.preAllocatedCacheRegistry[this.cyclicBufferPointer];
 
-    // Computes unique constant-time verification hashes combining hardware contexts and allocation indexes [1.1]
+    // Computes unique constant-time verification hashes combining hardware contexts and allocation indexes
     const formattingValidationJitter = this.generateSecureExecutionJitter(`${cleanLocale}_${detectedHardware}_${cleanPayload.length}_${registerJitterSeed}`);
     
     const hardwareSignatureTokenHex = `VXT_INFLATION_OS_LOCK_${(formattingValidationJitter ^ 0xDEADBEEF).toString(16).toUpperCase()}`;
     const uniqueCrossPlatformShieldToken = `VXT_JITTER_SHIELD_${(registerJitterSeed ^ 0x811C9DC5).toString(16).toUpperCase()}`;
     
-    // Dynamically counts estimated total byte constraints to block database memory buffer overflow attacks [1.1]
+    // Dynamically counts estimated total byte constraints to block database memory buffer overflow attacks
     const calculatedByteWeight = Number((sanitizedOutputBuffer.length * 2).toFixed(2));
 
     setImmediate(() => {
-      // Parallel logs processed in serverless worker micro-tasks safely [1.1]
+      // Parallel logs processed in serverless worker micro-tasks safely
     });
 
     return {
       isStructuringResolved: true,
       sanitizedMetricsPayload: sanitizedOutputBuffer,
-      assignedLinguisticContextToken: cleanLocale, // ➔ 100% Unbounded Dynamic Locale Tracker [1.1]
+      assignedLinguisticContextToken: cleanLocale, // ➔ 100% Unbounded Dynamic Locale Tracker
       memoryByteAllocationWeight: calculatedByteWeight,
       processingLatencyMs: Number((performance.now() - calculationTimerStart).toFixed(4)), 
-      hardwareVerificationHash: hardwareSignatureTokenHex, // ➔ Absolute dynamic lock across Windows, Mac, iOS, Android [1.1]
+      hardwareVerificationHash: hardwareSignatureTokenHex, // ➔ Absolute dynamic lock across Windows, Mac, iOS, Android
       crossPlatformJitterShield: uniqueCrossPlatformShieldToken
     };
   }

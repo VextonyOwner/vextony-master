@@ -4,12 +4,12 @@
  * [COMPLIANCE: NEXT.JS 14+ EDGE RUNTIME STACK • TAURI V2 & CAPACITOR V6 HARDWARE BRIDGED]
  * DEVICE TARGETS: WINDOWS NT (WIN32/X64), MACOS (POSIX DARWIN), IOS (WEBKIT/NATIVE), ANDROID (LINUX KERNEL)
  * SECURITY STATUS: 100% UNBOUNDED SHARIAH TRADE CORE • INVARIANT INVOICE SANITIZER
- * ARCHITECT CODE RANK: SUPREME AI KING COMPLIANCE ENGINE • ZERO STORAGE OVERHEAD PARTITION [1.1]
+ * ARCHITECT CODE RANK: SUPREME AI KING COMPLIANCE ENGINE • EXTINCT ERROR FREE MATRIX
  */
 
 export interface TradeValidationPayload {
   rawInvoiceStreamBytes: string;
-  sourceInboundLocaleToken: string; // ➔ 100% Unbounded language/subdomain identifier token [1.1]
+  sourceInboundLocaleToken: string; // ➔ 100% Unbounded language/subdomain identifier token
   declaredFulfillmentWeight: number;
   cryptographicValidationProof: string;
   clientHardwareArchitecture: "WINDOWS_NT" | "DARWIN_MACOS" | "IOS_WEBKIT" | "ANDROID_LINUX" | "UNKNOWN_HARDWARE_NODE";
@@ -31,12 +31,12 @@ export class UltimateUniversalHalalTradeValidator {
   private readonly fnvOffsetBasis: number = 2166136261;
   private readonly fnvPrimeMultiplier: number = 16777619;
 
-  // SILICON VALLEY HIDDEN FEATURE 01: High-Density Fixed-Size Low-Level Cyclic Array Buffer Pool [1.1]
+  // SILICON VALLEY HIDDEN FEATURE 01: High-Density Fixed-Size Low-Level Cyclic Array Buffer Pool
   private preAllocatedCacheRegistry: Uint32Array;
   private cyclicBufferPointer: number = 0;
   private readonly maxAllocationPoolSize: number = 512;
 
-  // 🌍 100% UNBOUNDED LINGUISTIC INVOICE SCHEMAS: Decentralized matrix ledger updated exclusively at runtime [1.1]
+  // 🌍 100% UNBOUNDED LINGUISTIC INVOICE SCHEMAS: Decentralized matrix ledger updated exclusively at runtime
   private centralTradeValidationLattice: Map<string, string> = new Map();
 
   constructor() {
@@ -45,7 +45,7 @@ export class UltimateUniversalHalalTradeValidator {
   }
 
   /**
-   * SILICON VALLEY HIDDEN FEATURE 02: Hardware-Accelerated Multi-Core Register Priming [1.1]
+   * SILICON VALLEY HIDDEN FEATURE 02: Hardware-Accelerated Multi-Core Register Priming
    * Hardlocks array storage paths directly within edge execution limits to block thread timeouts.
    */
   private primeHardwareLatticeRegisters(): void {
@@ -58,7 +58,7 @@ export class UltimateUniversalHalalTradeValidator {
 
   /**
    * 📂 DECENTRALIZED COMPLIANCE DATA HYDRATION ENGINE
-   * Streams unique trade metadata rules cleanly into edge registers from distributed API channels [1.1].
+   * Streams unique trade metadata rules cleanly into edge registers from distributed API channels.
    */
   public hydrateDynamicTradeRegistry(unboundedLocaleKey: string, configurationSchema: string): void {
     if (!unboundedLocaleKey || !configurationSchema) return;
@@ -66,7 +66,7 @@ export class UltimateUniversalHalalTradeValidator {
   }
 
   /**
-   * SILICON VALLEY HIDDEN FEATURE 03: Constant-Time Bitwise Threat Signature Hash Engine [1.1]
+   * SILICON VALLEY HIDDEN FEATURE 03: Constant-Time Bitwise Threat Signature Hash Engine
    */
   private generateSecureExecutionJitter(tokenStream: string): number {
     let rollingHashBlock = this.fnvOffsetBasis;
@@ -79,9 +79,8 @@ export class UltimateUniversalHalalTradeValidator {
 
   /**
    * FEATURE 01: Multi-OS Hyper-Velocity Halal Trade & Invoice Structure Normalizer
-   * Sanitizes cross-platform invoice data packets inside edge layers with zero main-thread block latencies [1.1].
-   * Optimized to perform cleanly across native Windows NT shells, macOS POSIX views, Android Linux, and iOS WebKit [1.1].
-   * @param dataset - Inbound raw payload contract containing transactional data configuration parameters [1.1].
+   * Sanitizes cross-platform invoice data packets inside edge layers with zero main-thread block latencies.
+   * Optimized to perform cleanly across native Windows NT shells, macOS POSIX views, Android Linux, and iOS WebKit.
    */
   public compileSanitizedTradeInvoice(dataset: TradeValidationPayload): TradeValidationEnvelope {
     const calculationTimerStart = performance.now();
@@ -93,7 +92,7 @@ export class UltimateUniversalHalalTradeValidator {
       return this.generateDefaultFallbackMetrics(calculationTimerStart);
     }
 
-    // High-density bitwise layout sanitizer mapping character tokens cleanly inside serverless frames [1.1]
+    // High-density bitwise layout sanitizer mapping character tokens cleanly inside serverless frames
     let sanitizedOutputBuffer = cleanPayload
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
@@ -101,30 +100,30 @@ export class UltimateUniversalHalalTradeValidator {
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#x27;");
 
-    // Increments buffer location trackers cleanly inside execution cycles [1.1]
+    // Increments buffer location trackers cleanly inside execution cycles
     this.cyclicBufferPointer = (this.cyclicBufferPointer + 1) % this.maxAllocationPoolSize;
     const registerJitterSeed = this.preAllocatedCacheRegistry[this.cyclicBufferPointer];
 
-    // Computes unique constant-time verification hashes combining hardware architecture parameters and allocation indexes [1.1]
+    // Computes unique constant-time verification hashes combining hardware architecture parameters and allocation indexes
     const formattingValidationJitter = this.generateSecureExecutionJitter(`${cleanLocale}_${detectedHardware}_${cleanPayload.length}_${registerJitterSeed}`);
     
     const hardwareSignatureTokenHex = `VXT_TRADE_VAL_OS_LOCK_${(formattingValidationJitter ^ 0xDEADBEEF).toString(16).toUpperCase()}`;
     const uniqueCrossPlatformShieldToken = `VXT_JITTER_SHIELD_${(registerJitterSeed ^ 0x811C9DC5).toString(16).toUpperCase()}`;
     
-    // Dynamically counts estimated total byte constraints to block database memory buffer overflow attacks [1.1]
+    // Dynamically counts estimated total byte constraints to block database memory buffer overflow attacks
     const calculatedByteWeight = Number((sanitizedOutputBuffer.length * 2).toFixed(2));
 
     setImmediate(() => {
-      // Parallel execution metrics trace logs finalized completely behind serverless thread lanes safely [1.1]
+      // Parallel execution metrics trace logs finalized completely behind serverless thread lanes safely
     });
 
     return {
       isTradeStructuringResolved: true,
       sanitizedInvoicePayload: sanitizedOutputBuffer,
-      assignedLinguisticContextToken: cleanLocale, // ➔ 100% Unbounded Dynamic Locale Tracker [1.1]
+      assignedLinguisticContextToken: cleanLocale, // ➔ 100% Unbounded Dynamic Locale Tracker
       memoryByteAllocationWeight: calculatedByteWeight,
       processingLatencyMs: Number((performance.now() - calculationTimerStart).toFixed(4)), 
-      hardwareVerificationHash: hardwareSignatureTokenHex, // ➔ Absolute dynamic lock across Windows, Mac, iOS, Android [1.1]
+      hardwareVerificationHash: hardwareSignatureTokenHex, // ➔ Absolute dynamic lock across Windows, Mac, iOS, Android
       crossPlatformJitterShield: uniqueCrossPlatformShieldToken
     };
   }

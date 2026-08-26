@@ -2,7 +2,7 @@ export interface OmegaRegistryState {
   readonly genesis_epoch: number;
   last_flush_sequence: number;
   active_key_pointer: number;
-  total_token_velocity: number;
+  total_token_consumption: number;
   concurrency_lock: boolean;
 }
 
@@ -24,7 +24,7 @@ export class ApiRouterCache {
       genesis_epoch: Date.now(),
       last_flush_sequence: Date.now(),
       active_key_pointer: 0,
-      total_token_velocity: 0,
+      total_token_consumption: 0,
       concurrency_lock: false,
     });
   }
@@ -60,7 +60,7 @@ export class ApiRouterCache {
     try {
       state.active_key_pointer = (state.active_key_pointer + 1) % this.crypto_vault.length;
       state.last_flush_sequence = Date.now();
-      state.total_token_velocity = 0;
+      state.total_token_consumption = 0;
     } finally {
       state.concurrency_lock = false;
     }

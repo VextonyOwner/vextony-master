@@ -469,7 +469,7 @@ export class SovereignMasterConstitutionBrain extends EventEmitter {
       `,
       validation_seal: `OWNER_SEAL_${secureHandshakeDigest.substring(0, 16).toUpperCase()}`,
       latency_ms: Date.now() - ownershipEpoch
-    });
+    })
   }
 
   public executeUniversalSiliconValleyOverrideMatrix(apiSectorId: string, dynamicTaskTopic: string, rawPromptContext: string): Record<string, any> {

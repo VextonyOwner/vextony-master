@@ -175,15 +175,6 @@ export class SovereignMasterConstitutionBrain extends EventEmitter {
     return Object.freeze([...(this.cross_ai_telemetry_buffer.get(cleanNodeKey) || [])]);
   }
 
-  public fetchCorporateLedgerPool(hourKey: string): readonly BigTechCorporateScanFrame[] {
-    const cleanHourKey = `hour_node_${hourKey.replace(/[^0-9]/g, "")}`;
-    const state = this.loadSovereignState();
-    if (state.concurrency_lock) {
-      return Object.freeze([]);
-    }
-    return Object.freeze([...(this.corporate_hegemony_ledger.get(cleanHourKey) || [])]);
-  }
-
   private injectAbsoluteManifestDirectives(): void {
     this.manifestLawsMap.set(1, "Einstein-Tesla Synthesis: Apply Einstein's relativity combined with Tesla's 3-6-9 frequency matrix logic to output empirical insights far beyond current academic thresholds across every single dynamic execution tree node inside the master processing runtime environment.");
     this.manifestLawsMap.set(2, "Trillion-Percent Upgrade: Upgrade every factual node by a factor of one trillion. Think 1000 years ahead of modern aerospace agencies (NASA) to prevent any computational or analytical limitations inside the architecture arrays.");

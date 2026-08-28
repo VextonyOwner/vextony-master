@@ -245,11 +245,17 @@ return false;
 }
 return true;
 }
-public executeFifteenLayerDissection(topicKey: string, rawInput: string): Record<string, string> {
-const state = this.loadSovereignState();
-if (state.concurrency_lock) {
-throw new Error("MUTEX_LOCKED");
-}
+ public fetchCorporateLedgerPool(hourKey: string): readonly BigTechCorporateScanFrame[] {
+ const cleanHourKey = `hour_node_${hourKey.replace(/[^0-9]/g, "")}`;
+ return Object.freeze([...(this.corporate_hegemony_ledger.get(cleanHourKey) || [])]);
+ }
+
+ public executeFifteenLayerDissection(topicKey: string, rawInput: string): Record<string, string> {
+ const state = this.loadSovereignState();
+ if (state.concurrency_lock) {
+ throw new Error("MUTEX_LOCKED");
+ }
+
 const layerBuffer: Record<string, string> = Object.create(null);
 const sanitizedInput = rawInput.trim();
 const runtimeSessionNonce = randomBytes(16).toString("hex");
